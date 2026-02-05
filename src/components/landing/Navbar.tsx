@@ -1,6 +1,6 @@
  import { useState, useEffect } from "react";
  import { motion, AnimatePresence } from "framer-motion";
- import { Menu, X } from "lucide-react";
+import { Menu, X, MessageCircle } from "lucide-react";
  import { Button } from "@/components/ui/button";
  import orbixLogo from "@/assets/orbix-logo.png";
  
@@ -29,7 +29,7 @@
        initial={{ y: -100 }}
        animate={{ y: 0 }}
        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-         isScrolled ? "glass py-3" : "py-6"
+        isScrolled ? "bg-white/95 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-6"
        }`}
      >
        <div className="container mx-auto px-6">
@@ -49,25 +49,28 @@
                <a
                  key={link.name}
                  href={link.href}
-                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+                className="text-sm font-medium text-navy-light hover:text-navy transition-colors relative group"
                >
                  {link.name}
-                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal group-hover:w-full transition-all duration-300" />
                </a>
              ))}
            </nav>
  
            {/* CTA Button */}
            <div className="hidden lg:block">
-             <Button variant="glow" size="lg">
-               Get a Free Strategy Call
-             </Button>
+            <Button variant="glow" size="lg" asChild>
+              <a href="https://wa.me/923104431295" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-4 w-4" />
+                WhatsApp Us
+              </a>
+            </Button>
            </div>
  
            {/* Mobile Menu Button */}
            <button
              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-             className="lg:hidden p-2 text-foreground"
+            className="lg:hidden p-2 text-navy"
            >
              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
            </button>
@@ -81,7 +84,7 @@
              initial={{ opacity: 0, height: 0 }}
              animate={{ opacity: 1, height: "auto" }}
              exit={{ opacity: 0, height: 0 }}
-             className="lg:hidden glass mt-4 mx-6 rounded-xl overflow-hidden"
+            className="lg:hidden bg-white shadow-lg mt-4 mx-6 rounded-xl overflow-hidden border border-border"
            >
              <nav className="flex flex-col p-6 gap-4">
                {navLinks.map((link) => (
@@ -89,14 +92,17 @@
                    key={link.name}
                    href={link.href}
                    onClick={() => setIsMobileMenuOpen(false)}
-                   className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-sm font-medium text-navy-light hover:text-navy transition-colors"
                  >
                    {link.name}
                  </a>
                ))}
-               <Button variant="glow" className="mt-4">
-                 Get a Free Strategy Call
-               </Button>
+              <Button variant="glow" className="mt-4" asChild>
+                <a href="https://wa.me/923104431295" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="mr-2 h-4 w-4" />
+                  WhatsApp Us
+                </a>
+              </Button>
              </nav>
            </motion.div>
          )}
