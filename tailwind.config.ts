@@ -61,13 +61,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom Neon Colors
-        neon: {
-          purple: "hsl(var(--neon-purple))",
-          violet: "hsl(var(--neon-violet))",
-          pink: "hsl(var(--neon-pink))",
-          cyan: "hsl(var(--neon-cyan))",
-          teal: "hsl(var(--neon-teal))",
+        // Custom Brand Colors
+        teal: {
+          DEFAULT: "hsl(var(--teal))",
+          light: "hsl(var(--teal-light))",
+          dark: "hsl(var(--teal-dark))",
+        },
+        navy: {
+          DEFAULT: "hsl(var(--navy))",
+          light: "hsl(var(--navy-light))",
+        },
+        cyan: {
+          DEFAULT: "hsl(var(--cyan))",
         },
       },
       borderRadius: {
@@ -134,7 +139,7 @@ export default {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "hero-gradient": "linear-gradient(135deg, hsl(var(--neon-purple) / 0.2), transparent, hsl(var(--neon-cyan) / 0.1))",
+        "hero-gradient": "linear-gradient(135deg, hsl(var(--teal) / 0.08), transparent, hsl(var(--cyan) / 0.05))",
       },
     },
   },

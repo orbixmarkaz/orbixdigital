@@ -41,7 +41,7 @@
    const isInView = useInView(ref, { once: true, margin: "-100px" });
  
    return (
-     <section id="process" className="py-24 bg-gradient-section relative overflow-hidden">
+    <section id="process" className="py-24 bg-background relative overflow-hidden">
        <div className="container mx-auto px-6 relative z-10">
          {/* Section Header */}
          <motion.div
@@ -50,11 +50,11 @@
            transition={{ duration: 0.8 }}
            className="text-center mb-16"
          >
-           <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-navy">
              Our Proven Process for{" "}
-             <span className="gradient-text">Achieving Success</span>
+            <span className="text-teal">Achieving Success</span>
            </h2>
-           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-navy-light max-w-2xl mx-auto">
              A systematic approach that transforms your marketing from guesswork to growth engine.
            </p>
          </motion.div>
@@ -63,7 +63,7 @@
          <div ref={ref} className="max-w-5xl mx-auto">
            <div className="relative">
              {/* Connection Line */}
-             <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-neon-cyan to-neon-violet hidden md:block" />
+            <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-teal via-cyan to-teal-light hidden md:block" />
  
              {steps.map((step, index) => (
                <motion.div
@@ -75,22 +75,22 @@
                >
                  {/* Step Number */}
                  <div className="flex-shrink-0 relative z-10">
-                   <div className="w-16 h-16 rounded-2xl glass-card flex items-center justify-center glow-purple">
-                     <step.icon className="w-7 h-7 text-primary" />
+                  <div className="w-16 h-16 rounded-2xl bg-white border border-border shadow-md flex items-center justify-center">
+                    <step.icon className="w-7 h-7 text-teal" />
                    </div>
                  </div>
  
                  {/* Content */}
-                 <div className="flex-1 glass-card rounded-2xl p-6 md:p-8 group hover:glow-purple transition-all duration-300">
+                <div className="flex-1 bg-white rounded-2xl p-6 md:p-8 group hover:glow-teal transition-all duration-300 border border-border shadow-sm">
                    <div className="flex items-center gap-4 mb-4">
-                     <span className="text-sm font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                    <span className="text-sm font-bold text-teal bg-teal/10 px-3 py-1 rounded-full">
                        Step {step.step}
                      </span>
                    </div>
-                   <h3 className="text-xl md:text-2xl font-semibold mb-3 text-foreground">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-3 text-navy">
                      {step.title}
                    </h3>
-                   <p className="text-muted-foreground">
+                  <p className="text-navy-light">
                      {step.description}
                    </p>
                  </div>

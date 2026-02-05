@@ -4,28 +4,28 @@
  
  export function HeroSection() {
    return (
-     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
        {/* Animated Background Elements */}
        <div className="absolute inset-0 overflow-hidden">
          {/* Floating Orbs */}
          <motion.div
            animate={{ y: [-20, 20, -20], rotate: [0, 5, 0] }}
            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-           className="absolute top-20 left-10 w-72 h-72 rounded-full bg-neon-purple/20 blur-3xl"
+          className="absolute top-20 left-10 w-72 h-72 rounded-full bg-teal/10 blur-3xl"
          />
          <motion.div
            animate={{ y: [20, -20, 20], rotate: [0, -5, 0] }}
            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-           className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-neon-cyan/15 blur-3xl"
+          className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-cyan/10 blur-3xl"
          />
          <motion.div
            animate={{ y: [-30, 30, -30] }}
            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-neon-violet/10 blur-3xl"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-teal-light/8 blur-3xl"
          />
  
          {/* Grid Pattern */}
-         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,92,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,0.03)_1px,transparent_1px)] bg-[size:100px_100px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(20,184,166,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(20,184,166,0.03)_1px,transparent_1px)] bg-[size:100px_100px]" />
        </div>
  
        <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
@@ -35,10 +35,10 @@
              initial={{ opacity: 0, y: 20 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.6 }}
-             className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal/10 border border-teal/20 mb-8"
            >
-             <span className="w-2 h-2 rounded-full bg-neon-cyan animate-pulse" />
-             <span className="text-sm text-muted-foreground">
+            <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
+            <span className="text-sm text-navy">
                Trusted by 20+ Premium Brands
              </span>
            </motion.div>
@@ -50,11 +50,11 @@
              transition={{ duration: 0.8, delay: 0.2 }}
              className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8"
            >
-             <span className="text-foreground">Innovative Solutions for</span>
+            <span className="text-navy">Innovative Solutions for</span>
              <br />
              <span className="gradient-text">Social & Performance</span>
              <br />
-             <span className="text-foreground">Marketing</span>
+            <span className="text-navy">Marketing</span>
            </motion.h1>
  
            {/* Subheadline */}
@@ -98,11 +98,11 @@
                { value: "3Cr+", label: "Revenue Generated" },
                { value: "18K+", label: "Conversions" },
              ].map((stat, index) => (
-               <div key={index} className="text-center">
+              <div key={index} className="text-center p-4 rounded-xl bg-white/80 border border-border shadow-sm">
                  <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
                    {stat.value}
                  </div>
-                 <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-sm text-navy-light">{stat.label}</div>
                </div>
              ))}
            </motion.div>

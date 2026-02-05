@@ -54,7 +54,7 @@
    const isInView = useInView(ref, { once: true, margin: "-100px" });
  
    return (
-     <section id="services" className="py-24 bg-gradient-section relative overflow-hidden">
+    <section id="services" className="py-24 bg-secondary/30 relative overflow-hidden">
        <div className="container mx-auto px-6 relative z-10">
          {/* Section Header */}
          <motion.div
@@ -63,11 +63,11 @@
            transition={{ duration: 0.8 }}
            className="text-center mb-16"
          >
-           <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-navy">
              Our Digital Services to{" "}
-             <span className="gradient-text">Grow Your Brand</span>
+            <span className="text-teal">Grow Your Brand</span>
            </h2>
-           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-navy-light max-w-2xl mx-auto">
              Full-service digital marketing solutions designed for brands ready to scale.
            </p>
          </motion.div>
@@ -82,27 +82,27 @@
                transition={{ duration: 0.6, delay: index * 0.1 }}
                className="group"
              >
-               <div className="glass-card rounded-2xl p-8 h-full transition-all duration-300 hover:glow-purple relative overflow-hidden">
+                <div className="bg-white rounded-2xl p-8 h-full transition-all duration-300 hover:glow-teal relative overflow-hidden border border-border shadow-sm">
                  {/* Gradient Overlay on Hover */}
-                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-neon-cyan/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-teal/5 to-cyan/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
  
                  {/* Icon */}
                  <div className="relative mb-6">
-                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-neon-cyan/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                     <service.icon className="w-7 h-7 text-primary" />
+                    <div className="w-14 h-14 rounded-xl bg-teal/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <service.icon className="w-7 h-7 text-teal" />
                    </div>
                  </div>
  
                  {/* Content */}
-                 <h3 className="text-xl font-semibold mb-3 text-foreground relative">
+                  <h3 className="text-xl font-semibold mb-3 text-navy relative">
                    {service.title}
                  </h3>
-                 <p className="text-muted-foreground relative">
+                  <p className="text-navy-light relative">
                    {service.description}
                  </p>
  
                  {/* Arrow on Hover */}
-                 <div className="mt-6 flex items-center text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative">
+                  <div className="mt-6 flex items-center text-teal opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative">
                    <span className="text-sm font-medium">Learn More</span>
                    <svg
                      className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"

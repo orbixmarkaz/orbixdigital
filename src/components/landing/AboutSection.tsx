@@ -31,7 +31,7 @@
    const isInView = useInView(ref, { once: true, margin: "-100px" });
  
    return (
-     <section id="about" className="py-24 bg-gradient-section relative overflow-hidden">
+    <section id="about" className="py-24 bg-secondary/30 relative overflow-hidden">
        <div className="container mx-auto px-6 relative z-10">
          <div className="grid lg:grid-cols-2 gap-16 items-center">
            {/* Content */}
@@ -41,17 +41,17 @@
              animate={isInView ? { opacity: 1, x: 0 } : {}}
              transition={{ duration: 0.8 }}
            >
-             <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-navy">
                An Agency of{" "}
-               <span className="gradient-text">Creative Innovators</span>
+              <span className="text-teal">Creative Innovators</span>
              </h2>
-             <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-navy-light mb-8">
                At Orbix Digital Markaz, we're more than a marketing agency — we're your 
                growth partners. Our team combines strategic expertise with creative 
                innovation to deliver campaigns that don't just look good, but perform 
                exceptionally.
              </p>
-             <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-navy-light mb-8">
                Founded with a mission to help Pakistani brands compete on a global scale, 
                we've helped over 20 businesses achieve unprecedented growth through 
                data-driven performance marketing.
@@ -65,10 +65,10 @@
                    initial={{ opacity: 0, y: 20 }}
                    animate={isInView ? { opacity: 1, y: 0 } : {}}
                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                   className="glass-card rounded-xl p-4 group hover:glow-purple transition-all duration-300"
+                  className="bg-white rounded-xl p-4 group hover:glow-teal transition-all duration-300 border border-border shadow-sm"
                  >
-                   <value.icon className="w-6 h-6 text-primary mb-2" />
-                   <h3 className="font-semibold text-foreground text-sm">
+                  <value.icon className="w-6 h-6 text-teal mb-2" />
+                  <h3 className="font-semibold text-navy text-sm">
                      {value.title}
                    </h3>
                  </motion.div>
@@ -88,38 +88,38 @@
                <motion.div
                  animate={{ y: [-10, 10, -10] }}
                  transition={{ duration: 6, repeat: Infinity }}
-                 className="absolute top-10 left-10 glass-card rounded-2xl p-6 glow-purple"
+                  className="absolute top-10 left-10 bg-white rounded-2xl p-6 shadow-lg border border-border"
                >
                  <div className="text-3xl font-bold gradient-text mb-1">100%</div>
-                 <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+                  <div className="text-sm text-navy-light">Client Satisfaction</div>
                </motion.div>
  
                <motion.div
                  animate={{ y: [10, -10, 10] }}
                  transition={{ duration: 7, repeat: Infinity }}
-                 className="absolute bottom-10 right-10 glass-card rounded-2xl p-6 glow-cyan"
+                  className="absolute bottom-10 right-10 bg-white rounded-2xl p-6 shadow-lg border border-border"
                >
                  <div className="text-3xl font-bold gradient-text-alt mb-1">24/7</div>
-                 <div className="text-sm text-muted-foreground">Support Available</div>
+                  <div className="text-sm text-navy-light">Support Available</div>
                </motion.div>
  
                <motion.div
                  animate={{ y: [-15, 15, -15] }}
                  transition={{ duration: 8, repeat: Infinity }}
-                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 glass-card rounded-2xl p-8 glow-purple"
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-2xl p-8 shadow-xl border border-border"
                >
                  <div className="text-4xl font-bold gradient-text mb-2">3+ Years</div>
-                 <div className="text-sm text-muted-foreground text-center">
+                  <div className="text-sm text-navy-light text-center">
                    Scaling Pakistani Brands
                  </div>
                </motion.div>
  
                {/* Background Circles */}
                <div className="absolute inset-0 flex items-center justify-center">
-                 <div className="w-64 h-64 rounded-full border border-primary/10 animate-pulse" />
+                  <div className="w-64 h-64 rounded-full border border-teal/10 animate-pulse" />
                </div>
                <div className="absolute inset-0 flex items-center justify-center">
-                 <div className="w-48 h-48 rounded-full border border-neon-cyan/10 animate-pulse" />
+                  <div className="w-48 h-48 rounded-full border border-cyan/10 animate-pulse" />
                </div>
              </div>
            </motion.div>

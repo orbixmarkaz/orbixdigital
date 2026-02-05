@@ -29,8 +29,8 @@
    const isInView = useInView(ref, { once: true, margin: "-100px" });
  
    return (
-     <section id="testimonials" className="py-24 relative overflow-hidden">
-       <div className="absolute inset-0 bg-mesh" />
+    <section id="testimonials" className="py-24 relative overflow-hidden bg-background">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/20 to-transparent" />
  
        <div className="container mx-auto px-6 relative z-10">
          {/* Section Header */}
@@ -40,11 +40,11 @@
            transition={{ duration: 0.8 }}
            className="text-center mb-16"
          >
-           <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-navy">
              What Clients Say About{" "}
-             <span className="gradient-text">Working With Us</span>
+            <span className="text-teal">Working With Us</span>
            </h2>
-           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-navy-light max-w-2xl mx-auto">
              Real feedback from real partners who trusted us with their growth.
            </p>
          </motion.div>
@@ -59,36 +59,36 @@
                transition={{ duration: 0.6, delay: index * 0.15 }}
                className="group"
              >
-               <div className="glass-card rounded-2xl p-8 h-full relative overflow-hidden hover:glow-purple transition-all duration-300">
+                <div className="bg-white rounded-2xl p-8 h-full relative overflow-hidden hover:glow-teal transition-all duration-300 border border-border shadow-sm">
                  {/* Quote Icon */}
-                 <div className="absolute top-6 right-6 opacity-20">
-                   <Quote className="w-12 h-12 text-primary" />
+                  <div className="absolute top-6 right-6 opacity-10">
+                    <Quote className="w-12 h-12 text-teal" />
                  </div>
  
                  {/* Stars */}
                  <div className="flex gap-1 mb-6">
                    {[...Array(testimonial.rating)].map((_, i) => (
-                     <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                      <Star key={i} className="w-5 h-5 fill-teal text-teal" />
                    ))}
                  </div>
  
                  {/* Content */}
-                 <p className="text-foreground mb-8 relative">
+                  <p className="text-navy mb-8 relative">
                    "{testimonial.content}"
                  </p>
  
                  {/* Author */}
                  <div className="flex items-center gap-4">
-                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-neon-cyan flex items-center justify-center">
-                     <span className="text-lg font-bold text-background">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal to-cyan flex items-center justify-center">
+                      <span className="text-lg font-bold text-white">
                        {testimonial.name.charAt(0)}
                      </span>
                    </div>
                    <div>
-                     <div className="font-semibold text-foreground">
+                      <div className="font-semibold text-navy">
                        {testimonial.name}
                      </div>
-                     <div className="text-sm text-muted-foreground">
+                      <div className="text-sm text-navy-light">
                        {testimonial.role}
                      </div>
                    </div>

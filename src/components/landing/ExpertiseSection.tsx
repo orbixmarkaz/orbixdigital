@@ -46,9 +46,9 @@
    const isInView = useInView(ref, { once: true, margin: "-100px" });
  
    return (
-     <section id="expertise" className="py-24 relative overflow-hidden">
-       {/* Background */}
-       <div className="absolute inset-0 bg-mesh" />
+    <section id="expertise" className="py-24 relative overflow-hidden bg-background">
+      {/* Subtle Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary/30 to-transparent" />
  
        <div className="container mx-auto px-6 relative z-10">
          {/* Section Header */}
@@ -58,11 +58,11 @@
            transition={{ duration: 0.8 }}
            className="text-center mb-16"
          >
-           <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-navy">
              Expertise That Drives{" "}
-             <span className="gradient-text">Digital Success</span>
+            <span className="text-teal">Digital Success</span>
            </h2>
-           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-navy-light max-w-2xl mx-auto">
              Real numbers from real campaigns. We let our results speak for themselves.
            </p>
          </motion.div>
@@ -77,7 +77,7 @@
                transition={{ duration: 0.6, delay: index * 0.1 }}
                className="group relative"
              >
-               <div className="glass-card rounded-2xl p-8 text-center transition-all duration-300 hover:glow-purple">
+                <div className="bg-white rounded-2xl p-8 text-center transition-all duration-300 hover:glow-teal border border-border shadow-sm">
                  {/* Glow Border on Hover */}
                  <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 glow-border" />
  
@@ -89,7 +89,7 @@
                      isInView={isInView}
                    />
                  </div>
-                 <div className="text-sm md:text-base text-muted-foreground">
+                  <div className="text-sm md:text-base text-navy-light">
                    {stat.label}
                  </div>
                </div>
