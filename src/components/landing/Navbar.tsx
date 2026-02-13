@@ -35,13 +35,19 @@ import { Menu, X, MessageCircle } from "lucide-react";
        <div className="container mx-auto px-6">
          <div className="flex items-center justify-between">
            {/* Logo */}
-           <a href="#" className="flex items-center gap-3 group">
+            <motion.a
+              href="#"
+              className="flex items-center gap-3 group"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
               <img
                 src={orbixLogo}
                 alt="Orbix Digital Markaz"
-                className="h-14 md:h-16 w-auto drop-shadow-sm"
+                className="h-14 md:h-16 w-[160px] md:w-[180px] object-contain drop-shadow-sm"
               />
-           </a>
+            </motion.a>
  
            {/* Desktop Navigation */}
            <nav className="hidden lg:flex items-center gap-8">
