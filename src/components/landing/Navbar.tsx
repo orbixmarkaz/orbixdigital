@@ -28,9 +28,9 @@ import { Menu, X, MessageCircle } from "lucide-react";
      <motion.header
        initial={{ y: -100 }}
        animate={{ y: 0 }}
-       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-6"
-       }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+         isScrolled ? "bg-white/80 backdrop-blur-xl shadow-sm py-3" : "bg-white/40 backdrop-blur-md py-5"
+        }`}
      >
        <div className="container mx-auto px-6">
          <div className="flex items-center justify-between">
@@ -45,7 +45,7 @@ import { Menu, X, MessageCircle } from "lucide-react";
               <img
                 src={orbixLogo}
                 alt="Orbix Digital Markaz"
-                className="h-14 md:h-16 w-[160px] md:w-[180px] object-contain drop-shadow-sm"
+                className="w-[180px] h-auto object-contain drop-shadow-sm"
               />
             </motion.a>
  
