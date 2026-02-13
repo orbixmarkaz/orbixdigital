@@ -1,4 +1,4 @@
- import { useState, useEffect } from "react";
+ import { useState } from "react";
  import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, MessageCircle } from "lucide-react";
  import { Button } from "@/components/ui/button";
@@ -13,24 +13,14 @@ import { Menu, X, MessageCircle } from "lucide-react";
  ];
  
  export function Navbar() {
-   const [isScrolled, setIsScrolled] = useState(false);
-   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
- 
-   useEffect(() => {
-     const handleScroll = () => {
-       setIsScrolled(window.scrollY > 50);
-     };
-     window.addEventListener("scroll", handleScroll);
-     return () => window.removeEventListener("scroll", handleScroll);
-   }, []);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
  
    return (
-     <motion.header
-       initial={{ y: -100 }}
-       animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-         isScrolled ? "bg-white/80 backdrop-blur-xl shadow-sm py-3" : "bg-white/40 backdrop-blur-md py-5"
-        }`}
+      <motion.header
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="absolute top-0 left-0 right-0 z-50 bg-transparent py-5"
      >
        <div className="container mx-auto px-6">
          <div className="flex items-center justify-between">
@@ -45,7 +35,7 @@ import { Menu, X, MessageCircle } from "lucide-react";
               <img
                 src={orbixLogo}
                 alt="Orbix Digital Markaz"
-                className="w-[180px] h-auto object-contain drop-shadow-sm"
+                className="h-[35px] w-auto object-contain"
               />
             </motion.a>
  
