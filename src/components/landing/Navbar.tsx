@@ -36,11 +36,11 @@ import { Menu, X, MessageCircle } from "lucide-react";
          <div className="flex items-center justify-between">
            {/* Logo */}
            <a href="#" className="flex items-center gap-3 group">
-             <img
-               src={orbixLogo}
-               alt="Orbix Digital Markaz"
-               className="h-10 w-auto"
-             />
+              <img
+                src={orbixLogo}
+                alt="Orbix Digital Markaz"
+                className="h-14 md:h-16 w-auto drop-shadow-sm"
+              />
            </a>
  
            {/* Desktop Navigation */}

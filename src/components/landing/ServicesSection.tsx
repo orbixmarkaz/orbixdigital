@@ -54,28 +54,28 @@ import {
   },
   {
     icon: Film,
-    title: "High-Retention Video Editing",
-    description: "Professional post-production for TikTok, Reels, and YouTube with storytelling-driven visual effects.",
+    title: "Creative Video Production",
+    description: "High-retention video editing for TikTok, Reels, and YouTube ads.",
   },
   {
     icon: Palette,
     title: "Bespoke Graphic Design",
-    description: "Custom brand identity, high-converting social creatives, and premium marketing collateral.",
+    description: "Premium brand identity and social media creatives that stand out.",
   },
   {
     icon: Link2,
     title: "Authority Link Building",
-    description: "Strategic SEO outreach and high-quality backlink acquisition to scale your domain authority.",
+    description: "Strategic SEO outreach to boost domain authority and rankings.",
   },
   {
     icon: Layout,
     title: "Elite UI/UX Design",
-    description: "User-centric interface design and seamless experience architecture optimized for conversions.",
+    description: "User-centric interface design for web and mobile apps optimized for UX.",
   },
   {
     icon: PenTool,
     title: "Strategic Content Writing",
-    description: "SEO-optimized blogs, persuasive ad copy, and brand storytelling that builds trust and drives action.",
+    description: "Persuasive, SEO-optimized copy that engages and converts readers.",
   },
 ];
  
