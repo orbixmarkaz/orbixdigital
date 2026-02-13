@@ -40,11 +40,11 @@ const TikTokIcon = ({ className }: { className?: string }) => (
            {/* Brand */}
            <div className="lg:col-span-2">
              <a href="#" className="flex items-center gap-3 mb-6">
-               <img
-                 src={orbixLogo}
-                 alt="Orbix Digital Markaz"
-                 className="h-12 w-auto"
-               />
+                <img
+                  src={orbixLogo}
+                  alt="Orbix Digital Markaz"
+                  className="w-[200px] h-auto object-contain brightness-0 invert opacity-90"
+                />
              </a>
             <p className="text-white/70 mb-6 max-w-sm">
                Your trusted partner for scaling brands through data-driven 
