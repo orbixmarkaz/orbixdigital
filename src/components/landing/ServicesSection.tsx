@@ -1,15 +1,20 @@
  import { motion } from "framer-motion";
  import { useInView } from "framer-motion";
  import { useRef } from "react";
- import {
-   Share2,
-   Target,
-   Search,
-   Video,
-   ShoppingBag,
-   LineChart,
-   Megaphone,
- } from "lucide-react";
+import {
+  Share2,
+  Target,
+  Search,
+  Video,
+  ShoppingBag,
+  LineChart,
+  Megaphone,
+  Film,
+  Palette,
+  Link2,
+  Layout,
+  PenTool,
+} from "lucide-react";
  
  const services = [
    {
@@ -42,12 +47,37 @@
      title: "Funnel Optimization",
      description: "Convert more visitors into customers with optimized sales funnels.",
    },
-   {
-     icon: Megaphone,
-     title: "Performance Strategy",
-     description: "Comprehensive marketing strategy tailored to your growth goals.",
-   },
- ];
+  {
+    icon: Megaphone,
+    title: "Performance Strategy",
+    description: "Comprehensive marketing strategy tailored to your growth goals.",
+  },
+  {
+    icon: Film,
+    title: "High-Retention Video Editing",
+    description: "Professional post-production for TikTok, Reels, and YouTube with storytelling-driven visual effects.",
+  },
+  {
+    icon: Palette,
+    title: "Bespoke Graphic Design",
+    description: "Custom brand identity, high-converting social creatives, and premium marketing collateral.",
+  },
+  {
+    icon: Link2,
+    title: "Authority Link Building",
+    description: "Strategic SEO outreach and high-quality backlink acquisition to scale your domain authority.",
+  },
+  {
+    icon: Layout,
+    title: "Elite UI/UX Design",
+    description: "User-centric interface design and seamless experience architecture optimized for conversions.",
+  },
+  {
+    icon: PenTool,
+    title: "Strategic Content Writing",
+    description: "SEO-optimized blogs, persuasive ad copy, and brand storytelling that builds trust and drives action.",
+  },
+];
  
  export function ServicesSection() {
    const ref = useRef(null);
