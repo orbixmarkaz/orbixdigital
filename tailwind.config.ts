@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Rajdhani', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['Orbitron', 'monospace'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -73,6 +73,12 @@ export default {
         },
         cyan: {
           DEFAULT: "hsl(var(--cyan))",
+        },
+        "neon-blue": {
+          DEFAULT: "hsl(var(--neon-blue))",
+        },
+        "neon-purple": {
+          DEFAULT: "hsl(var(--neon-purple))",
         },
       },
       borderRadius: {

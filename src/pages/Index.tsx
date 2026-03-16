@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/landing/Navbar";
 import { HeroSection } from "@/components/landing/HeroSection";
+import { BrandMarquee } from "@/components/landing/BrandMarquee";
 import { ValueProposition } from "@/components/landing/ValueProposition";
 import { ExpertiseSection } from "@/components/landing/ExpertiseSection";
 import { ServicesSection } from "@/components/landing/ServicesSection";
@@ -15,6 +16,7 @@ const Index = () => {
     <div className="min-h-screen bg-background overflow-x-hidden">
       <Navbar />
       <HeroSection />
+      <BrandMarquee />
       <ValueProposition />
       <ExpertiseSection />
       <ServicesSection />
