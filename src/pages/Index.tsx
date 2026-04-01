@@ -1,11 +1,11 @@
 import { Navbar } from "@/components/landing/Navbar";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { BrandMarquee } from "@/components/landing/BrandMarquee";
-import { ValueProposition } from "@/components/landing/ValueProposition";
-import { ExpertiseSection } from "@/components/landing/ExpertiseSection";
 import { ServicesSection } from "@/components/landing/ServicesSection";
-import { TrustSection } from "@/components/landing/TrustSection";
+import { WhyChooseUs } from "@/components/landing/WhyChooseUs";
+import { PricingSection } from "@/components/landing/PricingSection";
 import { ProcessSection } from "@/components/landing/ProcessSection";
+import { FounderSection } from "@/components/landing/FounderSection";
 import { AboutSection } from "@/components/landing/AboutSection";
 import { TestimonialsSection } from "@/components/landing/TestimonialsSection";
 import { CTASection } from "@/components/landing/CTASection";
@@ -17,11 +17,11 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <BrandMarquee />
-      <ValueProposition />
-      <ExpertiseSection />
       <ServicesSection />
-      <TrustSection />
+      <WhyChooseUs />
+      <PricingSection />
       <ProcessSection />
+      <FounderSection />
       <AboutSection />
       <TestimonialsSection />
       <CTASection />
