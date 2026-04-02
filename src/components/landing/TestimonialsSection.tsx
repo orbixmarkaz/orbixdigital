@@ -6,20 +6,20 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     name: "Ahmed Hassan",
-    role: "E-Commerce Business Owner",
-    content: "Orbix built our entire online store from scratch. The design is professional, the site loads fast, and our sales have increased significantly. Highly recommended.",
+    role: "E-Commerce Brand Owner",
+    content: "Orbix set up our Shopify store professionally and handled everything from theme setup to product uploading. The store looks premium and our sales have grown since launch.",
     rating: 5,
   },
   {
     name: "Sara Khan",
     role: "Fashion Brand Founder",
-    content: "The best decision we made was choosing Orbix for our website. The team understood our brand perfectly and delivered a website that truly represents our business.",
+    content: "The team understood our brand vision perfectly. The store presentation is clean, modern, and conversion-focused. Communication was smooth throughout the process.",
     rating: 5,
   },
   {
     name: "Ali Raza",
     role: "Small Business Owner",
-    content: "Professional, reliable, and great communication throughout the project. Our new website has already started bringing in more customers. Very happy with the service.",
+    content: "Professional, reliable, and great support. Our Shopify store was launch-ready with pixel setup and everything configured. Very happy with the service.",
     rating: 5,
   },
 ];
@@ -47,7 +47,7 @@ export function TestimonialsSection() {
             <span className="gradient-text">Say About Us</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real feedback from real businesses we've helped grow online.
+            Real feedback from brands we've helped launch and grow.
           </p>
         </motion.div>
 

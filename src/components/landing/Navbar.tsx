@@ -4,6 +4,8 @@ import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import orbixLogo from "@/assets/orbix-logo.png";
 
+const WA_LINK = "https://api.whatsapp.com/send/?phone=923104431295&text&type=phone_number&app_absent=0";
+
 const navLinks = [
   { name: "Services", href: "#services" },
   { name: "Pricing", href: "#pricing" },
@@ -17,7 +19,7 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -29,8 +31,8 @@ export function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "py-3 bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-background/20"
-          : "py-5 bg-transparent"
+          ? "py-2.5 bg-background/70 backdrop-blur-2xl border-b border-border/40 shadow-xl shadow-background/30"
+          : "py-4 bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6">
@@ -45,8 +47,8 @@ export function Navbar() {
             <img
               src={orbixLogo}
               alt="Orbix Digital Markaz"
-              className={`transition-all duration-300 w-auto object-contain brightness-0 invert ${
-                isScrolled ? "h-[32px]" : "h-[42px]"
+              className={`transition-all duration-300 w-auto object-contain ${
+                isScrolled ? "h-[40px]" : "h-[52px]"
               }`}
             />
           </motion.a>
@@ -56,7 +58,7 @@ export function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-foreground/60 hover:text-foreground transition-colors duration-300 relative group"
+                className="text-sm font-medium text-foreground/55 hover:text-foreground transition-colors duration-300 relative group"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full" />
@@ -66,7 +68,7 @@ export function Navbar() {
 
           <div className="hidden lg:block">
             <Button variant="glow" size="default" asChild>
-              <a href="https://wa.me/923104431295" target="_blank" rel="noopener noreferrer">
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
                 Get a Quote
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
@@ -102,7 +104,7 @@ export function Navbar() {
                 </a>
               ))}
               <Button variant="glow" className="mt-3" asChild>
-                <a href="https://wa.me/923104431295" target="_blank" rel="noopener noreferrer">
+                <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
                   Get a Quote
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>

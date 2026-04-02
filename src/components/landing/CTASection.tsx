@@ -4,16 +4,18 @@ import { useRef } from "react";
 import { ArrowRight, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const WA_LINK = "https://api.whatsapp.com/send/?phone=923104431295&text&type=phone_number&app_absent=0";
+
 export function CTASection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section className="py-28 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-t from-primary/5 via-background to-background" />
+      <div className="absolute inset-0 bg-gradient-to-t from-primary/4 via-background to-background" />
       <div className="absolute inset-0">
-        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-primary/5 blur-[100px] rounded-full" />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan/5 blur-[100px] rounded-full" />
+        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-primary/4 blur-[120px] rounded-full" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan/4 blur-[120px] rounded-full" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10" ref={ref}>
@@ -27,13 +29,13 @@ export function CTASection() {
             Let's Get Started
           </span>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 font-display tracking-tight">
-            Ready to Build Your{" "}
-            <span className="gradient-text text-glow">Dream Website?</span>
+            Ready to Launch Your{" "}
+            <span className="gradient-text text-glow">Brand?</span>
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            Get in touch today and let's discuss how we can help your business grow
-            with a professional, high-quality website that converts visitors into customers.
+            Get in touch today and let's discuss how we can set up your premium Shopify store,
+            prepare your marketing, and help your brand grow.
           </p>
 
           <motion.div
@@ -43,14 +45,14 @@ export function CTASection() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Button variant="glow" size="xl" asChild>
-              <a href="https://wa.me/923104431295" target="_blank" rel="noopener noreferrer">
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" />
-                Chat on WhatsApp
+                WhatsApp Us
               </a>
             </Button>
             <Button variant="glass" size="xl" asChild>
               <a href="#pricing">
-                View Our Plans
+                View Our Packages
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>

@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Globe, Code, ShoppingBag, Search, Palette, PenTool, Smartphone, BarChart3, ArrowRight } from "lucide-react";
+import { ShoppingBag, Palette, Package, Globe, Share2, Target, Activity, Rocket, ArrowRight } from "lucide-react";
 
 const services = [
-  { icon: Globe, title: "Website Design", description: "Custom, professional website designs tailored to your brand identity and business goals." },
-  { icon: Code, title: "Web Development", description: "Fast, responsive, and SEO-friendly websites built with modern technologies." },
-  { icon: ShoppingBag, title: "E-Commerce Solutions", description: "Complete online store setup with product uploading, payment, and inventory management." },
-  { icon: Search, title: "SEO Optimization", description: "Improve your search engine rankings and drive organic traffic to your website." },
-  { icon: Palette, title: "Graphic Design", description: "Professional branding, logos, and marketing visuals that make your business stand out." },
-  { icon: PenTool, title: "Content Writing", description: "Persuasive, SEO-optimized website copy that engages visitors and drives conversions." },
-  { icon: Smartphone, title: "Social Media Marketing", description: "Strategic social media management to grow your audience and build brand awareness." },
-  { icon: BarChart3, title: "Digital Marketing", description: "Data-driven marketing campaigns that deliver measurable results and real ROI." },
+  { icon: ShoppingBag, title: "Shopify Store Setup", description: "Premium theme-based Shopify store configuration tailored to your brand and niche." },
+  { icon: Palette, title: "Store Branding & Presentation", description: "Professional store design polish, branding alignment, and conversion-focused layout." },
+  { icon: Package, title: "Product Uploading", description: "Organized product listings with clean descriptions, images, and variant management." },
+  { icon: Globe, title: "Domain Connection & Technical Setup", description: "Domain linking, SSL, essential technical configurations for a smooth launch." },
+  { icon: Share2, title: "Social Media & Business Setup", description: "Create and connect social media accounts and key business assets." },
+  { icon: Target, title: "Meta Pixel & Event Setup", description: "Meta pixel integration, event tracking, and ad-readiness configuration." },
+  { icon: Activity, title: "Performance Marketing Readiness", description: "Prepare your store for high-performing ad campaigns with tracking and optimization." },
+  { icon: Rocket, title: "Launch & Growth Support", description: "End-to-end launch support with post-launch guidance for scaling your brand." },
 ];
 
 export function ServicesSection() {
@@ -30,14 +30,14 @@ export function ServicesSection() {
           className="text-center mb-16"
         >
           <span className="text-sm font-medium text-primary tracking-wider uppercase mb-4 block">
-            What We Do
+            What We Deliver
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
             Services Built for{" "}
-            <span className="gradient-text">Your Growth</span>
+            <span className="gradient-text">Brand Growth</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive digital solutions to help your business succeed online.
+            From Shopify setup to marketing readiness — everything your brand needs to launch and scale.
           </p>
         </motion.div>
 
@@ -54,7 +54,7 @@ export function ServicesSection() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 <div className="relative">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/15 flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors">
+                  <div className="w-12 h-12 rounded-xl bg-primary/8 border border-primary/12 flex items-center justify-center mb-4 group-hover:bg-primary/12 transition-colors">
                     <service.icon className="w-6 h-6 text-primary" />
                   </div>
 
