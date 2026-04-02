@@ -4,55 +4,55 @@ import { useRef } from "react";
 import { Check, Star, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const WA_LINK = "https://api.whatsapp.com/send/?phone=923104431295&text&type=phone_number&app_absent=0";
+
 const plans = [
   {
-    name: "Basic Plan",
+    name: "Basic",
     price: "30,000",
     uploadPrice: "500",
-    description: "Best for small businesses starting online",
+    description: "Best for new brands starting their Shopify presence",
     popular: false,
     features: [
-      "Custom Basic Website",
-      "Responsive Design",
-      "Up to 5 Pages",
-      "Contact Form Integration",
-      "Basic SEO Setup",
-      "1 Round of Revisions",
+      "Premium Shopify Theme Setup",
+      "Clean Brand-Focused Store Layout",
+      "Essential Store Configuration",
+      "Navigation & Basic Store Structure",
+      "Mobile-Responsive Setup",
+      "Basic Launch Readiness",
     ],
   },
   {
-    name: "Standard Plan",
+    name: "Standard",
     price: "40,000",
     uploadPrice: "500",
-    description: "Best for growing businesses that need a complete online presence",
+    description: "Best for growing businesses that want a stronger and more polished store",
     popular: true,
     features: [
-      "Professional Website Design",
-      "Fully Responsive Layout",
-      "Up to 10 Pages",
-      "Advanced Contact Forms",
-      "SEO Optimization",
+      "Advanced Premium Theme Setup",
+      "Professionally Structured Store Layout",
+      "Collection & Product Organization",
+      "Domain Connection",
+      "Essential App Integration",
       "Social Media Integration",
-      "3 Rounds of Revisions",
-      "Speed Optimization",
+      "Better Conversion-Focused Presentation",
     ],
   },
   {
-    name: "Premium Plan",
+    name: "Premium",
     price: "55,000",
     uploadPrice: "400",
-    description: "Best for brands that want a premium, high-performing website",
+    description: "Best for brands that want a premium launch-ready store with marketing readiness",
     popular: false,
     features: [
-      "Premium Custom Design",
-      "Unlimited Pages",
-      "E-commerce Integration",
-      "Advanced SEO & Analytics",
-      "Social Media Integration",
-      "Priority Support",
-      "Unlimited Revisions",
-      "Performance Optimization",
-      "Content Management System",
+      "High-End Premium Theme Setup",
+      "Advanced Brand Presentation",
+      "Full Store Launch Configuration",
+      "Meta Pixel Connection",
+      "Pixel Testing & Event Testing",
+      "Social Account Connection",
+      "Catalog / Commerce Readiness",
+      "Priority Launch Support",
     ],
   },
 ];
@@ -76,11 +76,11 @@ export function PricingSection() {
             Transparent Pricing
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
-            Choose the Right Plan for{" "}
-            <span className="gradient-text">Your Business</span>
+            Shopify Setup{" "}
+            <span className="gradient-text">Packages</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Professional website packages designed for Pakistani businesses. No hidden charges.
+            Premium Shopify store setup packages designed for brands that want to launch right.
           </p>
         </motion.div>
 
@@ -105,7 +105,7 @@ export function PricingSection() {
               <div
                 className={`glass-card rounded-2xl p-8 h-full flex flex-col transition-all duration-500 hover:-translate-y-1 ${
                   plan.popular
-                    ? "border-primary/40 shadow-lg shadow-primary/10"
+                    ? "border-primary/30 shadow-lg shadow-primary/8"
                     : "neon-border"
                 }`}
               >
@@ -140,8 +140,8 @@ export function PricingSection() {
                   className="w-full"
                   asChild
                 >
-                  <a href="https://wa.me/923104431295" target="_blank" rel="noopener noreferrer">
-                    Choose Plan
+                  <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+                    Get Started
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>

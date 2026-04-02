@@ -4,10 +4,10 @@ import { useRef } from "react";
 import { Target, TrendingUp, Shield, Heart } from "lucide-react";
 
 const values = [
-  { icon: Target, title: "Results-Driven", description: "Every project is focused on delivering real business outcomes." },
-  { icon: TrendingUp, title: "Growth-Oriented", description: "We build websites that help your business grow and scale." },
-  { icon: Shield, title: "Reliable & Trusted", description: "Consistent quality and timely delivery you can count on." },
-  { icon: Heart, title: "Client-First Approach", description: "Your satisfaction and success are our top priorities." },
+  { icon: Target, title: "Performance-Focused", description: "Every project is built to drive real, measurable growth for your brand." },
+  { icon: TrendingUp, title: "Growth-Oriented", description: "We prepare stores and brands for long-term scalability and marketing success." },
+  { icon: Shield, title: "Reliable & Trusted", description: "Consistent quality, timely delivery, and honest communication you can count on." },
+  { icon: Heart, title: "Client-First Approach", description: "Your brand vision and success are at the center of everything we do." },
 ];
 
 export function AboutSection() {
@@ -34,21 +34,19 @@ export function AboutSection() {
               <span className="gradient-text">Digital Growth</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              At Orbix Digital Markaz, we specialize in creating professional, high-quality websites
-              that help businesses establish a strong online presence. With a focus on design excellence,
-              clean development, and genuine client care, we've helped businesses across Pakistan
-              launch and grow in the digital world.
+              At Orbix Digital Markaz, we specialize in premium Shopify store setup, brand presentation,
+              and digital marketing readiness. We help businesses launch professional, high-converting
+              online stores using premium themes — and prepare them for real performance marketing.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Whether you're a startup looking for your first website or an established business
-              wanting a complete digital upgrade, our team delivers solutions that work — on time,
-              on budget, and built to last.
+              Whether you're a new brand looking to launch your first Shopify store or an established
+              business wanting stronger digital presence, we deliver execution that drives results.
             </p>
 
             <div className="grid grid-cols-2 gap-4">
               {[
                 { num: "5+", label: "Years Experience" },
-                { num: "50+", label: "Projects Delivered" },
+                { num: "50+", label: "Stores Launched" },
                 { num: "100%", label: "Client Satisfaction" },
                 { num: "24/7", label: "Support Available" },
               ].map((stat, i) => (
@@ -80,7 +78,7 @@ export function AboutSection() {
                 transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
                 className="glass-card neon-border rounded-xl p-5 flex items-start gap-4 group hover:-translate-y-0.5 transition-all duration-300"
               >
-                <div className="w-11 h-11 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/15 transition-colors">
+                <div className="w-11 h-11 rounded-lg bg-primary/8 border border-primary/15 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/12 transition-colors">
                   <value.icon className="w-5 h-5 text-primary" />
                 </div>
                 <div>

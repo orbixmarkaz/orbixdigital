@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Award, Briefcase, Users, HeadphonesIcon } from "lucide-react";
+import { Award, ShoppingBag, TrendingUp, HeadphonesIcon } from "lucide-react";
+import founderImage from "@/assets/founder-abdul-basit.jpg";
 
 const highlights = [
   { icon: Award, text: "5+ Years Experience" },
-  { icon: Briefcase, text: "Professional Website Solutions" },
-  { icon: Users, text: "Business-Focused Approach" },
+  { icon: ShoppingBag, text: "Shopify Store Setup Expertise" },
+  { icon: TrendingUp, text: "Digital Growth Focus" },
   { icon: HeadphonesIcon, text: "Reliable Client Support" },
 ];
 
@@ -35,7 +36,6 @@ export function FounderSection() {
 
         <div className="max-w-5xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Photo */}
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -43,23 +43,18 @@ export function FounderSection() {
               className="flex justify-center"
             >
               <div className="relative">
-                <div className="w-72 h-72 md:w-80 md:h-80 rounded-2xl bg-gradient-to-br from-primary/20 to-cyan/10 overflow-hidden border border-primary/20 shadow-2xl shadow-primary/5">
-                  <div className="w-full h-full flex items-center justify-center bg-secondary/50">
-                    <div className="text-center">
-                      <div className="w-24 h-24 rounded-full bg-primary/15 border border-primary/30 flex items-center justify-center mx-auto mb-4">
-                        <span className="text-4xl font-bold gradient-text font-display">AB</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground">Abdul Basit</p>
-                    </div>
-                  </div>
+                <div className="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border border-primary/15 shadow-2xl shadow-primary/5">
+                  <img
+                    src={founderImage}
+                    alt="Abdul Basit — Founder, Orbix Digital Markaz"
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
-                {/* Decorative elements */}
-                <div className="absolute -top-3 -right-3 w-20 h-20 rounded-xl border border-primary/20 -z-10" />
+                <div className="absolute -top-3 -right-3 w-20 h-20 rounded-xl border border-primary/15 -z-10" />
                 <div className="absolute -bottom-3 -left-3 w-20 h-20 rounded-xl bg-primary/5 -z-10" />
               </div>
             </motion.div>
 
-            {/* Content */}
             <motion.div
               initial={{ opacity: 0, x: 40 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -71,10 +66,10 @@ export function FounderSection() {
               <p className="text-primary font-medium mb-6">Owner / Founder</p>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Abdul Basit is the founder behind the brand, with 5+ years of market
-                experience in delivering professional digital solutions. He focuses on
-                helping businesses build a strong online presence through high-quality
-                websites, smart design, and reliable service.
+                Abdul Basit is the founder behind the brand, bringing 5+ years of market experience
+                in digital growth, Shopify store setup, branding support, and performance-focused
+                execution. He helps businesses build a stronger online presence through premium
+                store presentation, better launch readiness, and growth-driven digital systems.
               </p>
 
               <div className="grid grid-cols-2 gap-3">
@@ -86,7 +81,7 @@ export function FounderSection() {
                     transition={{ duration: 0.5, delay: 0.5 + i * 0.1 }}
                     className="glass-card neon-border rounded-xl p-4 flex items-center gap-3 group hover:-translate-y-0.5 transition-all duration-300"
                   >
-                    <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="w-9 h-9 rounded-lg bg-primary/8 flex items-center justify-center flex-shrink-0">
                       <item.icon className="w-4 h-4 text-primary" />
                     </div>
                     <span className="text-sm text-foreground/80 font-medium">{item.text}</span>
