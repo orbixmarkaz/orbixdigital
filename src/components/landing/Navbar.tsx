@@ -9,9 +9,9 @@ const WA_LINK = "https://api.whatsapp.com/send/?phone=923104431295&text&type=pho
 const navLinks = [
   { name: "Services", href: "#services" },
   { name: "Pricing", href: "#pricing" },
+  { name: "Case Studies", href: "#case-studies" },
   { name: "Process", href: "#process" },
   { name: "About", href: "#about" },
-  { name: "Testimonials", href: "#testimonials" },
 ];
 
 export function Navbar() {
