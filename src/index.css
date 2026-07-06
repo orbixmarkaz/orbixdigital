@@ -116,13 +116,13 @@
   }
 
   .neon-border {
-    border: 1px solid hsl(var(--teal) / 0.12);
+    border: 1px solid hsl(var(--teal) / 0.22);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .neon-border:hover {
-    border-color: hsl(var(--teal) / 0.35);
-    box-shadow: 0 0 24px hsl(var(--teal) / 0.06), 0 12px 40px hsl(var(--background) / 0.6);
+    border-color: hsl(var(--teal) / 0.45);
+    box-shadow: 0 0 24px hsl(var(--teal) / 0.08), 0 12px 40px hsl(var(--foreground) / 0.06);
   }
 
   .text-glow {
