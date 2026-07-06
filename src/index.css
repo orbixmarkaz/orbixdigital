@@ -91,17 +91,19 @@
 
   /* Glass Effect */
   .glass {
-    background: hsl(var(--glass-bg) / 0.75);
+    background: hsl(var(--glass-bg) / 0.85);
     backdrop-filter: blur(28px);
     -webkit-backdrop-filter: blur(28px);
-    border: 1px solid hsl(var(--glass-border) / 0.5);
+    border: 1px solid hsl(var(--glass-border) / 0.6);
+    box-shadow: 0 4px 24px hsl(var(--foreground) / 0.04);
   }
 
   .glass-card {
-    background: hsl(var(--card) / 0.5);
+    background: hsl(var(--card) / 0.92);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid hsl(var(--glass-border) / 0.25);
+    border: 1px solid hsl(var(--glass-border) / 0.45);
+    box-shadow: 0 4px 20px hsl(var(--foreground) / 0.03);
   }
 
   /* Glow Effects */
