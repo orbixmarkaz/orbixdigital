@@ -20,7 +20,7 @@ export function BrandMarquee() {
             {[...brands, ...brands].map((brand, i) => (
               <span
                 key={i}
-                className="text-base font-semibold text-foreground/15 hover:text-primary/40 transition-colors duration-300 cursor-default tracking-wider uppercase"
+                className="text-base font-semibold text-foreground/30 hover:text-primary/60 transition-colors duration-300 cursor-default tracking-wider uppercase"
               >
                 {brand}
               </span>
