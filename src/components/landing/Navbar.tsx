@@ -47,6 +47,10 @@ export function Navbar() {
             <img
               src={orbixLogo}
               alt="Orbix Digital Markaz"
+              width={200}
+              height={200}
+              fetchPriority="high"
+              decoding="async"
               className={`transition-all duration-300 w-auto object-contain ${
                 isScrolled ? "h-[40px]" : "h-[52px]"
               }`}

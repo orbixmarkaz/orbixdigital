@@ -89,6 +89,8 @@ function BeforeAfterCard({ study, index }: { study: Study; index: number }) {
         <img
           src={study.before}
           alt={`${study.title} — before`}
+          loading="lazy"
+          decoding="async"
           className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-500 ${
             view === "before" ? "opacity-100" : "opacity-0"
           }`}
@@ -96,6 +98,8 @@ function BeforeAfterCard({ study, index }: { study: Study; index: number }) {
         <img
           src={study.after}
           alt={`${study.title} — after`}
+          loading="lazy"
+          decoding="async"
           className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-500 ${
             view === "after" ? "opacity-100" : "opacity-0"
           }`}
