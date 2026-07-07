@@ -1,4 +1,4 @@
-import orbixLogo from "@/assets/orbix-logo.png";
+import orbixLogo from "@/assets/orbix-logo.webp";
 import { Facebook, Instagram, MessageCircle } from "lucide-react";
 
 const WA_LINK = "https://api.whatsapp.com/send/?phone=923104431295&text&type=phone_number&app_absent=0";

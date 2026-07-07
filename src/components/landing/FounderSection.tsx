@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Award, ShoppingBag, TrendingUp, HeadphonesIcon } from "lucide-react";
-import founderImage from "@/assets/founder-abdul-basit.jpg";
+import founderImage from "@/assets/founder-abdul-basit.webp";
 
 const highlights = [
   { icon: Award, text: "5+ Years Experience" },
@@ -47,6 +47,8 @@ export function FounderSection() {
                   <img
                     src={founderImage}
                     alt="Abdul Basit — Founder, Orbix Digital Markaz"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>

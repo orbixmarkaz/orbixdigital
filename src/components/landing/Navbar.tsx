@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import orbixLogo from "@/assets/orbix-logo.png";
+import orbixLogo from "@/assets/orbix-logo.webp";
 
 const WA_LINK = "https://api.whatsapp.com/send/?phone=923104431295&text&type=phone_number&app_absent=0";
 
@@ -47,6 +47,10 @@ export function Navbar() {
             <img
               src={orbixLogo}
               alt="Orbix Digital Markaz"
+              width={200}
+              height={200}
+              fetchPriority="high"
+              decoding="async"
               className={`transition-all duration-300 w-auto object-contain ${
                 isScrolled ? "h-[40px]" : "h-[52px]"
               }`}
