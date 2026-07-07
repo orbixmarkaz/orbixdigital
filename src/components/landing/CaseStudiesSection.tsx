@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { TrendingUp, ArrowLeftRight } from "lucide-react";
-import before1 from "@/assets/case-studies/before.png";
-import after1 from "@/assets/case-studies/after.png";
-import before2 from "@/assets/case-studies/before_2.png";
-import after2 from "@/assets/case-studies/after_2.png";
-import before3 from "@/assets/case-studies/before_3.png";
-import after3 from "@/assets/case-studies/after_3.png";
-import before4 from "@/assets/case-studies/before_4.png";
-import after4 from "@/assets/case-studies/after_4.png";
+import before1 from "@/assets/case-studies/before.webp";
+import after1 from "@/assets/case-studies/after.webp";
+import before2 from "@/assets/case-studies/before_2.webp";
+import after2 from "@/assets/case-studies/after_2.webp";
+import before3 from "@/assets/case-studies/before_3.webp";
+import after3 from "@/assets/case-studies/after_3.webp";
+import before4 from "@/assets/case-studies/before_4.webp";
+import after4 from "@/assets/case-studies/after_4.webp";
 
 type Study = {
   title: string;
