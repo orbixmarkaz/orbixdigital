@@ -34,7 +34,8 @@ export function ServicesSection() {
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
             Services Built for{" "}
-            <span className="gradient-text">Brand Growth</span>
+            <span className="gradient-text">Brand Growth</span>{" "}
+            <span className="text-foreground/80 block text-2xl md:text-3xl mt-2 font-semibold">by Orbix Digital</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             From Shopify setup to marketing readiness — everything your brand needs to launch and scale.

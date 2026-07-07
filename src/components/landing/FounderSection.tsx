@@ -30,7 +30,7 @@ export function FounderSection() {
             Leadership
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
-            Meet the <span className="gradient-text">Founder</span>
+            Meet the Founder of <span className="gradient-text">Orbix Digital Markaz</span>
           </h2>
         </motion.div>
 

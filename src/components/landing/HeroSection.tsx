@@ -36,8 +36,10 @@ export function HeroSection() {
             <span className="text-foreground">Launch Your </span>
             <span className="gradient-text">Shopify Store</span>
             <br />
-            <span className="text-foreground">& Scale Your Brand</span>
+            <span className="text-foreground">& Scale Your Brand </span>
+            <span className="text-foreground/80 text-3xl md:text-5xl lg:text-6xl">with Orbix Digital Markaz</span>
           </motion.h1>
+
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}

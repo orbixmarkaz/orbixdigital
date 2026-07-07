@@ -46,13 +46,14 @@ export function Footer() {
             <a href="#" className="flex items-center gap-3 mb-6">
               <img
                 src={orbixLogo}
-                alt="Orbix Digital Markaz"
+                alt="Orbix Digital Markaz — digital marketing agency in Pakistan"
                 className="w-[180px] h-auto object-contain brightness-0 invert opacity-80"
               />
             </a>
             <p className="text-muted-foreground mb-6 max-w-sm text-sm leading-relaxed">
-              Premium Shopify store setup, digital marketing readiness, and brand growth
-              solutions. Based in Pakistan, helping brands launch and scale.
+              Orbix Digital Markaz (Orbix Digital) — a digital marketing agency in Pakistan
+              delivering premium Shopify store setup, website development, and growth-focused
+              marketing for brands launching and scaling.
             </p>
             <p className="text-muted-foreground mb-6 text-sm">
               <span className="font-semibold text-foreground">WhatsApp:</span>{" "}
@@ -99,7 +100,7 @@ export function Footer() {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2025 Orbix Digital Markaz. All rights reserved.
+              © {new Date().getFullYear()} Orbix Digital Markaz. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">

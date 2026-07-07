@@ -85,8 +85,8 @@ export function ProcessSection() {
             Our Process
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
-            How We{" "}
-            <span className="gradient-text">Get It Done</span>
+            How Orbix Digital Markaz{" "}
+            <span className="gradient-text">Gets It Done</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A real 10-step agency workflow — from discovery to launch.

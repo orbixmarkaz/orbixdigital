@@ -43,8 +43,8 @@ export function TestimonialsSection() {
             Client Feedback
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
-            What Our Clients{" "}
-            <span className="gradient-text">Say About Us</span>
+            What Clients Say About{" "}
+            <span className="gradient-text">Orbix Digital</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Real feedback from brands we've helped launch and grow.

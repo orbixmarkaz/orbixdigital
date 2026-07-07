@@ -30,9 +30,12 @@ export function AboutSection() {
               About Orbix
             </span>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
-              Your Trusted Partner for{" "}
-              <span className="gradient-text">Digital Growth</span>
+              About Orbix Digital Markaz —{" "}
+              <span className="gradient-text">Your Digital Growth Partner</span>
             </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Orbix Digital Markaz is a Pakistan-based digital marketing agency helping brands grow through Shopify store setup, website development, and performance-focused digital marketing.
+            </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
               At Orbix Digital Markaz, we specialize in premium Shopify store setup, brand presentation,
               and digital marketing readiness. We help businesses launch professional, high-converting
