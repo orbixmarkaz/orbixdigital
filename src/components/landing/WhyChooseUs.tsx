@@ -50,8 +50,8 @@ export function WhyChooseUs() {
             Why Orbix
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
-            Why Brands{" "}
-            <span className="gradient-text">Choose Us</span>
+            Why Brands Choose{" "}
+            <span className="gradient-text">Orbix Digital Markaz</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             We deliver quality, reliability, and conversion-focused execution.

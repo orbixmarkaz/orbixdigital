@@ -12,6 +12,7 @@ const ProcessSection = lazy(() => import("@/components/landing/ProcessSection").
 const FounderSection = lazy(() => import("@/components/landing/FounderSection").then(m => ({ default: m.FounderSection })));
 const AboutSection = lazy(() => import("@/components/landing/AboutSection").then(m => ({ default: m.AboutSection })));
 const TestimonialsSection = lazy(() => import("@/components/landing/TestimonialsSection").then(m => ({ default: m.TestimonialsSection })));
+const FAQSection = lazy(() => import("@/components/landing/FAQSection").then(m => ({ default: m.FAQSection })));
 const CTASection = lazy(() => import("@/components/landing/CTASection").then(m => ({ default: m.CTASection })));
 const Footer = lazy(() => import("@/components/landing/Footer").then(m => ({ default: m.Footer })));
 
@@ -30,6 +31,7 @@ const Index = () => {
         <FounderSection />
         <AboutSection />
         <TestimonialsSection />
+        <FAQSection />
         <CTASection />
         <Footer />
       </Suspense>

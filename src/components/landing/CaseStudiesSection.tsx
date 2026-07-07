@@ -177,6 +177,7 @@ function BeforeAfterCard({ study, index }: { study: Study; index: number }) {
 export function CaseStudiesSection() {
   return (
     <section id="case-studies" className="relative py-24 md:py-32 overflow-hidden">
+      <span id="results" className="absolute -top-24" aria-hidden="true" />
       <div className="absolute inset-0 cyber-grid opacity-30 pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-radial pointer-events-none" />
 
@@ -192,8 +193,8 @@ export function CaseStudiesSection() {
             Case Studies
           </span>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-5">
-            <span className="text-foreground">Proven </span>
-            <span className="gradient-text">Results</span>
+            <span className="text-foreground">Proven Results </span>
+            <span className="gradient-text">with Orbix Digital Markaz</span>
           </h2>
           <p className="text-base md:text-lg text-foreground/60 leading-relaxed">
             Real transformations, data-driven design, and high-converting Shopify stores — backed

@@ -11,7 +11,7 @@ export function CTASection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-28 relative overflow-hidden">
+    <section id="contact" className="py-28 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-primary/4 via-background to-background" />
       <div className="absolute inset-0">
         <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-primary/4 blur-[120px] rounded-full" />
@@ -29,8 +29,8 @@ export function CTASection() {
             Let's Get Started
           </span>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 font-display tracking-tight">
-            Ready to Launch Your{" "}
-            <span className="gradient-text text-glow">Brand?</span>
+            Ready to Launch Your Brand with{" "}
+            <span className="gradient-text text-glow">Orbix Digital</span>
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">

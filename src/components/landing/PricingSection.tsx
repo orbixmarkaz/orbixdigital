@@ -76,8 +76,8 @@ export function PricingSection() {
             Transparent Pricing
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
-            Shopify Setup{" "}
-            <span className="gradient-text">Packages</span>
+            Shopify Setup <span className="gradient-text">Packages</span>{" "}
+            <span className="text-foreground/80 block text-2xl md:text-3xl mt-2 font-semibold">by Orbix Digital</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Premium Shopify store setup packages designed for brands that want to launch right.
