@@ -47,6 +47,8 @@ export function FounderSection() {
                   <img
                     src={founderImage}
                     alt="Abdul Basit — Founder, Orbix Digital Markaz"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
