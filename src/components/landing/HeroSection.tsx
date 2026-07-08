@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, ShoppingBag, BarChart3, Rocket } from "lucide-react";
+import { ArrowRight, ShoppingBag, BarChart3, Rocket, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WA_LINK = "https://api.whatsapp.com/send/?phone=923104431295&text&type=phone_number&app_absent=0";
@@ -7,44 +7,45 @@ const WA_LINK = "https://api.whatsapp.com/send/?phone=923104431295&text&type=pho
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+      {/* Ambient background */}
+      <div className="absolute inset-0 bg-gradient-hero" />
       <div className="absolute inset-0">
-        <div className="absolute top-20 right-20 w-[500px] h-[500px] bg-primary/4 rounded-full blur-[140px]" />
-        <div className="absolute bottom-20 left-20 w-[400px] h-[400px] bg-cyan/4 rounded-full blur-[120px]" />
-        <div className="absolute inset-0 cyber-grid opacity-20" />
+        <div className="absolute top-24 right-16 w-[560px] h-[560px] bg-primary/10 rounded-full blur-[160px] animate-float-slow" />
+        <div className="absolute bottom-10 left-10 w-[460px] h-[460px] bg-cyan/10 rounded-full blur-[140px] animate-float-slow" style={{ animationDelay: "-6s" }} />
+        <div className="absolute inset-0 cyber-grid opacity-70" />
       </div>
 
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+      <div className="container mx-auto px-6 pt-36 pb-24 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/15 bg-primary/5 mb-10"
+            className="eyebrow mb-8"
           >
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm text-foreground/60 font-medium">
-              Premium Shopify Setup & Digital Growth Agency
-            </span>
+            <span className="eyebrow-dot animate-pulse" />
+            Premium Shopify Setup & Digital Growth
           </motion.div>
 
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.15 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.08] mb-8 font-display tracking-tight"
+            transition={{ duration: 0.9, delay: 0.1, ease: [0.2, 0.7, 0.2, 1] }}
+            className="text-[42px] sm:text-6xl lg:text-[80px] font-display leading-[1.02] mb-8 tracking-tight text-foreground"
           >
-            <span className="text-foreground">Launch Your </span>
+            Launch Your{" "}
             <span className="gradient-text">Shopify Store</span>
             <br />
-            <span className="text-foreground">& Scale Your Brand </span>
-            <span className="text-foreground/80 text-3xl md:text-5xl lg:text-6xl">with Orbix Digital Markaz</span>
+            & Scale Your Brand{" "}
+            <span className="font-serif-accent text-foreground/70 block sm:inline text-3xl sm:text-5xl lg:text-6xl mt-2 sm:mt-0">
+              with Orbix Digital Markaz
+            </span>
           </motion.h1>
 
-
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.28 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed"
           >
             We set up premium Shopify stores using high-converting themes, handle product uploading,
@@ -52,28 +53,41 @@ export function HeroSection() {
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.45 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20"
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14"
           >
             <Button variant="glow" size="xl" asChild>
               <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+                <Sparkles className="mr-1 h-4 w-4" />
                 Get a Free Strategy Call
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
             <Button variant="glass" size="xl" asChild>
-              <a href="#pricing">
-                View Packages
-              </a>
+              <a href="#pricing">View Packages</a>
             </Button>
           </motion.div>
 
+          {/* Trust bar */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.55 }}
+            className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 mb-16 text-xs uppercase tracking-[0.18em] text-muted-foreground/70"
+          >
+            <span>50+ Stores Launched</span>
+            <span className="w-1 h-1 rounded-full bg-border" />
+            <span>5+ Years Experience</span>
+            <span className="w-1 h-1 rounded-full bg-border" />
+            <span>ROAS-Driven</span>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
             className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto"
           >
             {[
@@ -81,8 +95,8 @@ export function HeroSection() {
               { icon: BarChart3, title: "Performance Marketing", desc: "Meta ads & growth systems" },
               { icon: Rocket, title: "Launch Support", desc: "End-to-end launch readiness" },
             ].map((item, i) => (
-              <div key={i} className="glass-card neon-border rounded-2xl p-6 text-center group hover:-translate-y-1 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-primary/8 border border-primary/15 flex items-center justify-center mx-auto mb-3 group-hover:bg-primary/12 transition-colors">
+              <div key={i} className="glass-card ring-gradient rounded-2xl p-6 text-center group">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-cyan/10 border border-primary/20 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-500">
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-semibold text-foreground text-sm mb-1">{item.title}</h3>
