@@ -16,23 +16,23 @@ export function FounderSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="founder" className="py-28 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
+    <section id="founder" className="py-32 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
+      <div className="absolute inset-x-0 top-0 divider-fade" />
 
       <div className="container mx-auto px-6 relative z-10" ref={ref}>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-20 max-w-3xl mx-auto"
         >
-          <span className="text-sm font-medium text-primary tracking-wider uppercase mb-4 block">
-            Leadership
-          </span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
+          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Leadership</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
             Meet the Founder of <span className="gradient-text">Orbix Digital Markaz</span>
           </h2>
         </motion.div>
+
 
         <div className="max-w-5xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -43,7 +43,8 @@ export function FounderSection() {
               className="flex justify-center"
             >
               <div className="relative">
-                <div className="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border border-primary/15 shadow-2xl shadow-primary/5">
+                <div className="w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden border border-primary/25 shadow-[var(--shadow-elegant)]">
+
                   <img
                     src={founderImage}
                     alt="Abdul Basit — Founder, Orbix Digital Markaz"
@@ -81,11 +82,12 @@ export function FounderSection() {
                     initial={{ opacity: 0, y: 15 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.5 + i * 0.1 }}
-                    className="glass-card neon-border rounded-xl p-4 flex items-center gap-3 group hover:-translate-y-0.5 transition-all duration-300"
+                    className="glass-card ring-gradient rounded-2xl p-4 flex items-center gap-3 group hover:-translate-y-0.5 transition-transform duration-500"
                   >
-                    <div className="w-9 h-9 rounded-lg bg-primary/8 flex items-center justify-center flex-shrink-0">
+                    <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary/15 to-cyan/10 border border-primary/20 flex items-center justify-center flex-shrink-0">
                       <item.icon className="w-4 h-4 text-primary" />
                     </div>
+
                     <span className="text-sm text-foreground/80 font-medium">{item.text}</span>
                   </motion.div>
                 ))}
