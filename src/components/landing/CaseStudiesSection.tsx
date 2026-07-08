@@ -83,8 +83,9 @@ function BeforeAfterCard({ study, index }: { study: Study; index: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.6, delay: index * 0.08 }}
-      className="glass-card neon-border rounded-2xl overflow-hidden group"
+      className="glass-card ring-gradient rounded-3xl overflow-hidden group"
     >
+
       <div className="relative aspect-[16/9] bg-secondary/40 overflow-hidden">
         <img
           src={study.before}
@@ -176,10 +177,11 @@ function BeforeAfterCard({ study, index }: { study: Study; index: number }) {
 
 export function CaseStudiesSection() {
   return (
-    <section id="case-studies" className="relative py-24 md:py-32 overflow-hidden">
+    <section id="case-studies" className="relative py-32 overflow-hidden">
       <span id="results" className="absolute -top-24" aria-hidden="true" />
-      <div className="absolute inset-0 cyber-grid opacity-30 pointer-events-none" />
+      <div className="absolute inset-0 cyber-grid opacity-60 pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-radial pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 divider-fade" />
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -187,20 +189,20 @@ export function CaseStudiesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-20"
         >
-          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-medium tracking-wider uppercase bg-primary/10 text-primary border border-primary/25 mb-5">
-            Case Studies
-          </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-5">
-            <span className="text-foreground">Proven Results </span>
-            <span className="gradient-text">with Orbix Digital Markaz</span>
+          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Case Studies</span>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] mb-6 tracking-tight">
+            Proven Results{" "}
+            <span className="font-serif-accent text-foreground/70">with</span>{" "}
+            <span className="gradient-text">Orbix Digital Markaz</span>
           </h2>
-          <p className="text-base md:text-lg text-foreground/60 leading-relaxed">
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
             Real transformations, data-driven design, and high-converting Shopify stores — backed
             by verified Meta Ads performance.
           </p>
         </motion.div>
+
 
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
           {studies.map((s, i) => (
