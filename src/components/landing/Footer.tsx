@@ -1,5 +1,5 @@
 import orbixLogo from "@/assets/orbix-logo.webp";
-import { Facebook, Instagram, MessageCircle } from "lucide-react";
+import { Facebook, Instagram, Linkedin, MessageCircle } from "lucide-react";
 
 const WA_LINK = "https://api.whatsapp.com/send/?phone=923104431295&text&type=phone_number&app_absent=0";
 
@@ -11,8 +11,9 @@ const TikTokIcon = ({ className }: { className?: string }) => (
 
 const socialLinks = [
   { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61587500429601" },
-  { icon: Instagram, href: "https://www.instagram.com/orbix_digi" },
+  { icon: Instagram, href: "https://www.instagram.com/orbixdigital.info" },
   { icon: TikTokIcon, href: "https://www.tiktok.com/@orbix.digital" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/orbix-digital-marketing-agency/" },
   { icon: MessageCircle, href: WA_LINK },
 ];
 
