@@ -103,22 +103,24 @@ export function PricingSection() {
               )}
 
               <div
-                className={`glass-card rounded-2xl p-8 h-full flex flex-col transition-all duration-500 hover:-translate-y-1 ${
+                className={`glass-card rounded-3xl p-8 h-full flex flex-col transition-all duration-500 hover:-translate-y-1.5 ring-gradient ${
                   plan.popular
-                    ? "border-primary/30 shadow-lg shadow-primary/8"
-                    : "neon-border"
+                    ? "border-primary/40 shadow-[0_30px_70px_-30px_hsl(var(--teal)/0.45)]"
+                    : ""
                 }`}
               >
+
                 <div className="mb-6">
                   <h3 className="text-xl font-bold text-foreground mb-2">{plan.name}</h3>
                   <p className="text-sm text-muted-foreground">{plan.description}</p>
                 </div>
 
                 <div className="mb-6">
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-sm text-muted-foreground">PKR</span>
-                    <span className="text-4xl font-bold font-display text-foreground">{plan.price}</span>
+                  <div className="flex items-baseline gap-1.5">
+                    <span className="text-sm text-muted-foreground font-medium">PKR</span>
+                    <span className="text-5xl font-display font-bold text-foreground tracking-tight">{plan.price}</span>
                   </div>
+
                   <p className="text-xs text-muted-foreground mt-2">
                     + PKR {plan.uploadPrice} per product upload
                   </p>
