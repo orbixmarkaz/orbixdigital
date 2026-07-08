@@ -71,27 +71,27 @@ export function ProcessSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="process" className="py-28 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
+    <section id="process" className="py-32 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
+      <div className="absolute inset-x-0 top-0 divider-fade" />
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-20 max-w-3xl mx-auto"
         >
-          <span className="text-sm font-medium text-primary tracking-wider uppercase mb-4 block">
-            Our Process
-          </span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
+          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Our Process</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
             How Orbix Digital Markaz{" "}
             <span className="gradient-text">Gets It Done</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             A real 10-step agency workflow — from discovery to launch.
           </p>
         </motion.div>
+
 
         <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 max-w-7xl mx-auto">
           {steps.map((step, index) => (
@@ -102,13 +102,14 @@ export function ProcessSection() {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="relative group"
             >
-              <div className="glass-card neon-border rounded-2xl p-5 text-center h-full hover:-translate-y-1 transition-all duration-300">
-                <div className="text-[10px] font-bold text-primary tracking-widest uppercase mb-3">
+              <div className="glass-card ring-gradient rounded-2xl p-5 text-center h-full hover:-translate-y-1.5 transition-transform duration-500">
+                <div className="text-[10px] font-bold text-primary tracking-[0.22em] uppercase mb-3">
                   Step {step.step}
                 </div>
-                <div className="w-11 h-11 rounded-xl bg-primary/8 border border-primary/15 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/12 transition-colors">
+                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary/15 to-cyan/10 border border-primary/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500">
                   <step.icon className="w-5 h-5 text-primary" />
                 </div>
+
                 <h3 className="text-sm font-semibold mb-2 text-foreground leading-snug">{step.title}</h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">{step.description}</p>
               </div>
