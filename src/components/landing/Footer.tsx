@@ -40,7 +40,8 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="py-16 border-t border-border relative overflow-hidden bg-secondary/30">
+    <footer className="pt-20 pb-10 border-t border-border relative overflow-hidden bg-gradient-to-b from-secondary/40 to-secondary/70">
+      <div className="absolute inset-x-0 top-0 divider-fade" />
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           <div className="lg:col-span-2">
@@ -48,9 +49,10 @@ export function Footer() {
               <img
                 src={orbixLogo}
                 alt="Orbix Digital Markaz — digital marketing agency in Pakistan"
-                className="w-[180px] h-auto object-contain brightness-0 invert opacity-80"
+                className="w-[180px] h-auto object-contain"
               />
             </a>
+
             <p className="text-muted-foreground mb-6 max-w-sm text-sm leading-relaxed">
               Orbix Digital Markaz (Orbix Digital) — a digital marketing agency in Pakistan
               delivering premium Shopify store setup, website development, and growth-focused
@@ -69,7 +71,8 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-lg border border-border bg-secondary/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/30 transition-all duration-300"
+                  className="w-10 h-10 rounded-xl border border-border bg-background/60 backdrop-blur flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 hover:-translate-y-0.5 hover:shadow-[0_8px_20px_-8px_hsl(var(--teal)/0.35)] transition-all duration-300"
+
                 >
                   <social.icon className="w-4 h-4" />
                 </a>
