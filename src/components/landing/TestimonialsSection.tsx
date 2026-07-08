@@ -29,27 +29,27 @@ export function TestimonialsSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="testimonials" className="py-28 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
+    <section id="testimonials" className="py-32 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
+      <div className="absolute inset-x-0 top-0 divider-fade" />
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-20 max-w-3xl mx-auto"
         >
-          <span className="text-sm font-medium text-primary tracking-wider uppercase mb-4 block">
-            Client Feedback
-          </span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
+          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Client Feedback</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
             What Clients Say About{" "}
             <span className="gradient-text">Orbix Digital</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             Real feedback from brands we've helped launch and grow.
           </p>
         </motion.div>
+
 
         <div ref={ref} className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
@@ -60,7 +60,7 @@ export function TestimonialsSection() {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="group"
             >
-              <div className="glass-card neon-border rounded-2xl p-8 h-full relative overflow-hidden hover:-translate-y-1 transition-all duration-300">
+              <div className="glass-card ring-gradient rounded-3xl p-8 h-full relative overflow-hidden hover:-translate-y-1.5 transition-transform duration-500">
                 <div className="absolute top-6 right-6 opacity-10">
                   <Quote className="w-10 h-10 text-primary" />
                 </div>
@@ -71,9 +71,10 @@ export function TestimonialsSection() {
                   ))}
                 </div>
 
-                <p className="text-foreground/80 mb-8 text-sm leading-relaxed">
+                <p className="font-serif-accent text-foreground/85 mb-8 text-lg leading-relaxed">
                   "{testimonial.content}"
                 </p>
+
 
                 <div className="flex items-center gap-3 mt-auto">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-cyan flex items-center justify-center">

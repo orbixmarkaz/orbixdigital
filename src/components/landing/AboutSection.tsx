@@ -15,8 +15,9 @@ export function AboutSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-28 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
+    <section id="about" className="py-32 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
+      <div className="absolute inset-x-0 top-0 divider-fade" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
@@ -26,16 +27,15 @@ export function AboutSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-sm font-medium text-primary tracking-wider uppercase mb-4 block">
-              About Orbix
-            </span>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
+            <span className="eyebrow mb-6"><span className="eyebrow-dot" /> About Orbix</span>
+            <h2 className="text-4xl md:text-5xl font-display mb-6 tracking-tight leading-[1.05]">
               About Orbix Digital Markaz —{" "}
               <span className="gradient-text">Your Digital Growth Partner</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               Orbix Digital Markaz is a Pakistan-based digital marketing agency helping brands grow through Shopify store setup, website development, and performance-focused digital marketing.
             </p>
+
             <p className="text-muted-foreground leading-relaxed mb-6">
               At Orbix Digital Markaz, we specialize in premium Shopify store setup, brand presentation,
               and digital marketing readiness. We help businesses launch professional, high-converting
@@ -58,10 +58,11 @@ export function AboutSection() {
                   initial={{ opacity: 0, y: 15 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-                  className="text-center p-4 glass-card neon-border rounded-xl"
+                  className="text-center p-5 glass-card ring-gradient rounded-2xl"
                 >
-                  <div className="text-2xl font-bold gradient-text font-display mb-1">{stat.num}</div>
-                  <div className="text-xs text-muted-foreground">{stat.label}</div>
+                  <div className="text-3xl font-bold gradient-text font-display mb-1 tracking-tight">{stat.num}</div>
+                  <div className="text-xs text-muted-foreground uppercase tracking-[0.14em]">{stat.label}</div>
+
                 </motion.div>
               ))}
             </div>
@@ -79,11 +80,12 @@ export function AboutSection() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                className="glass-card neon-border rounded-xl p-5 flex items-start gap-4 group hover:-translate-y-0.5 transition-all duration-300"
+                className="glass-card ring-gradient rounded-2xl p-5 flex items-start gap-4 group hover:-translate-y-0.5 transition-transform duration-500"
               >
-                <div className="w-11 h-11 rounded-lg bg-primary/8 border border-primary/15 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/12 transition-colors">
+                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary/15 to-cyan/10 border border-primary/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
                   <value.icon className="w-5 h-5 text-primary" />
                 </div>
+
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">{value.title}</h3>
                   <p className="text-sm text-muted-foreground">{value.description}</p>

@@ -31,9 +31,10 @@ export function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "py-2.5 bg-background/70 backdrop-blur-2xl border-b border-border/40 shadow-xl shadow-background/30"
+          ? "py-2.5 bg-background/75 backdrop-blur-2xl border-b border-border/60 shadow-[0_8px_30px_-12px_hsl(var(--navy)/0.12)]"
           : "py-4 bg-transparent"
       }`}
+
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">

@@ -19,28 +19,28 @@ export function ServicesSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="services" className="py-28 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
+    <section id="services" className="py-32 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
+      <div className="absolute inset-x-0 top-0 divider-fade" />
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-20 max-w-3xl mx-auto"
         >
-          <span className="text-sm font-medium text-primary tracking-wider uppercase mb-4 block">
-            What We Deliver
-          </span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
+          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> What We Deliver</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
             Services Built for{" "}
             <span className="gradient-text">Brand Growth</span>{" "}
-            <span className="text-foreground/80 block text-2xl md:text-3xl mt-2 font-semibold">by Orbix Digital</span>
+            <span className="font-serif-accent text-foreground/70 block text-2xl md:text-3xl mt-3">by Orbix Digital</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             From Shopify setup to marketing readiness — everything your brand needs to launch and scale.
           </p>
         </motion.div>
+
 
         <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
           {services.map((service, index) => (
@@ -51,12 +51,14 @@ export function ServicesSection() {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="group"
             >
-              <div className="glass-card neon-border rounded-2xl p-6 h-full hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+              <div className="glass-card ring-gradient rounded-2xl p-6 h-full hover:-translate-y-1.5 transition-transform duration-500 relative overflow-hidden">
+
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 <div className="relative">
-                  <div className="w-12 h-12 rounded-xl bg-primary/8 border border-primary/12 flex items-center justify-center mb-4 group-hover:bg-primary/12 transition-colors">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-cyan/10 border border-primary/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
                     <service.icon className="w-6 h-6 text-primary" />
+
                   </div>
 
                   <h3 className="text-base font-semibold mb-2 text-foreground">{service.title}</h3>

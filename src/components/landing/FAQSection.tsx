@@ -29,27 +29,27 @@ export function FAQSection() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-28 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
+    <section id="faq" className="py-32 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
+      <div className="absolute inset-x-0 top-0 divider-fade" />
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-14"
+          className="text-center mb-16 max-w-3xl mx-auto"
         >
-          <span className="text-sm font-medium text-primary tracking-wider uppercase mb-4 block">
-            FAQs
-          </span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight">
+          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> FAQs</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
             Frequently Asked <span className="gradient-text">Questions</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             Everything you need to know about working with Orbix Digital Markaz.
           </p>
         </motion.div>
+
 
         <div className="max-w-3xl mx-auto space-y-3">
           {faqs.map((item, i) => {
@@ -57,20 +57,21 @@ export function FAQSection() {
             return (
               <div
                 key={i}
-                className="glass-card neon-border rounded-xl overflow-hidden"
+                className="glass-card ring-gradient rounded-2xl overflow-hidden"
               >
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between gap-4 text-left p-5 hover:bg-primary/5 transition-colors"
+                  className="w-full flex items-center justify-between gap-4 text-left p-6 hover:bg-primary/5 transition-colors"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-sm md:text-base font-semibold text-foreground">
+                  <span className="text-base md:text-lg font-semibold text-foreground">
                     {item.q}
                   </span>
-                  <span className="w-8 h-8 rounded-lg bg-primary/8 border border-primary/15 flex items-center justify-center flex-shrink-0 text-primary">
+                  <span className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary/15 to-cyan/10 border border-primary/20 flex items-center justify-center flex-shrink-0 text-primary transition-transform duration-300" style={{ transform: isOpen ? "rotate(180deg)" : "none" }}>
                     {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                   </span>
                 </button>
+
                 {isOpen && (
                   <div className="px-5 pb-5 -mt-1 text-sm text-muted-foreground leading-relaxed">
                     {item.a}
