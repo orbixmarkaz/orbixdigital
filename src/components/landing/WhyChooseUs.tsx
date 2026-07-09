@@ -36,7 +36,7 @@ export function WhyChooseUs() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section className="section-y relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/40 via-background to-background" />
       <div className="absolute inset-x-0 top-0 divider-fade" />
 
@@ -44,35 +44,36 @@ export function WhyChooseUs() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-20 max-w-3xl mx-auto"
+          transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
+          className="text-center mb-24 max-w-3xl mx-auto"
         >
           <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Why Orbix</span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
-            Why Brands Choose{" "}
-            <span className="gradient-text">Orbix Digital Markaz</span>
+            The partner brands trust to{" "}
+            <span className="gradient-text">launch and scale with clarity</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Hire a Shopify expert team that pairs premium design with conversion-focused execution — built to convert your Shopify store into a real growth engine.
+          <p className="text-lg text-muted-foreground leading-[1.75] tracking-[-0.005em]">
+            Hire a Shopify expert team that pairs premium design with conversion-focused execution —
+            built to turn your storefront into a real, measurable growth engine.
           </p>
         </motion.div>
 
-        <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
+        <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {reasons.map((reason, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 25 }}
+              initial={{ opacity: 0, y: 28 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.65, delay: index * 0.09, ease: [0.2, 0.7, 0.2, 1] }}
               className={`group ${index === 4 ? "lg:col-start-2" : ""}`}
             >
-              <div className="glass-card ring-gradient rounded-2xl p-7 h-full hover:-translate-y-1.5 transition-transform duration-500">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-cyan/10 border border-primary/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+              <div className="glass-card ring-gradient card-lift rounded-2xl p-8 h-full">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-cyan/10 border border-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
 
                   <reason.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{reason.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{reason.description}</p>
+                <h3 className="text-lg font-semibold text-foreground mb-3">{reason.title}</h3>
+                <p className="text-sm text-muted-foreground leading-[1.75]">{reason.description}</p>
               </div>
             </motion.div>
           ))}

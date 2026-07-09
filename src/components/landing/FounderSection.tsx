@@ -16,7 +16,7 @@ export function FounderSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="founder" className="py-32 relative overflow-hidden">
+    <section id="founder" className="section-y relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
       <div className="absolute inset-x-0 top-0 divider-fade" />
 
@@ -24,12 +24,12 @@ export function FounderSection() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-20 max-w-3xl mx-auto"
+          transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
+          className="text-center mb-24 max-w-3xl mx-auto"
         >
           <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Leadership</span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
-            Meet the Founder of <span className="gradient-text">Orbix Digital Markaz</span>
+            The mind behind <span className="gradient-text">Orbix Digital Markaz</span>
           </h2>
         </motion.div>
 
