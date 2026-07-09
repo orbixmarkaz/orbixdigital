@@ -62,7 +62,7 @@ export function PricingSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="pricing" className="py-32 relative overflow-hidden">
+    <section id="pricing" className="section-y relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
       <div className="absolute inset-x-0 top-0 divider-fade" />
 
@@ -70,16 +70,16 @@ export function PricingSection() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-20 max-w-3xl mx-auto"
+          transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
+          className="text-center mb-24 max-w-3xl mx-auto"
         >
           <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Transparent Pricing</span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
-            Shopify Setup <span className="gradient-text">Packages</span>{" "}
+            Shopify setup <span className="gradient-text">packages</span>{" "}
             <span className="font-serif-accent text-foreground/70 block text-2xl md:text-3xl mt-3">by Orbix Digital</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Premium Shopify theme customization packages built to convert your Shopify store — hire a Shopify expert team that launches brands the right way.
+          <p className="text-lg text-muted-foreground leading-[1.75] tracking-[-0.005em]">
+            Premium Shopify theme customization tiers built to convert your Shopify store — hire a Shopify expert team that launches brands the right way.
           </p>
         </motion.div>
 

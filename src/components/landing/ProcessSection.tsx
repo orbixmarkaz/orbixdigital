@@ -71,7 +71,7 @@ export function ProcessSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="process" className="py-32 relative overflow-hidden">
+    <section id="process" className="section-y relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
       <div className="absolute inset-x-0 top-0 divider-fade" />
 
@@ -79,30 +79,30 @@ export function ProcessSection() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-20 max-w-3xl mx-auto"
+          transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
+          className="text-center mb-24 max-w-3xl mx-auto"
         >
           <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Our Process</span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
-            How Orbix Digital Markaz{" "}
-            <span className="gradient-text">Gets It Done</span>
+            A disciplined workflow,{" "}
+            <span className="gradient-text">engineered for launch-day results</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            A real 10-step agency workflow — from discovery to launch.
+          <p className="text-lg text-muted-foreground leading-[1.75] tracking-[-0.005em]">
+            A refined 10-step agency process — from discovery to launch — designed for clarity, confidence, and measurable outcomes.
           </p>
         </motion.div>
 
 
-        <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 max-w-7xl mx-auto">
+        <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-5 gap-5 max-w-7xl mx-auto">
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 25 }}
+              initial={{ opacity: 0, y: 28 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
+              transition={{ duration: 0.6, delay: index * 0.07, ease: [0.2, 0.7, 0.2, 1] }}
               className="relative group"
             >
-              <div className="glass-card ring-gradient rounded-2xl p-5 text-center h-full hover:-translate-y-1.5 transition-transform duration-500">
+              <div className="glass-card ring-gradient card-lift rounded-2xl p-6 text-center h-full">
                 <div className="text-[10px] font-bold text-primary tracking-[0.22em] uppercase mb-3">
                   Step {step.step}
                 </div>

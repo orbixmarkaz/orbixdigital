@@ -45,12 +45,12 @@ export function HeroSection() {
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.28 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed"
+            transition={{ duration: 0.9, delay: 0.28, ease: [0.2, 0.7, 0.2, 1] }}
+            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-14 leading-[1.75] tracking-[-0.005em]"
           >
-            Work with a trusted Shopify web developer and e-commerce digital marketing agency.
-            We deliver high-converting e-commerce website design, premium Shopify theme customization,
-            and performance marketing readiness that helps you convert your Shopify store into a scalable brand.
+            A trusted Shopify web developer and e-commerce digital marketing agency crafting
+            high-converting stores, premium theme customization, and performance-ready launches —
+            engineered to convert your Shopify store into a scalable brand.
           </motion.p>
 
           <motion.div

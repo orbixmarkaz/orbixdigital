@@ -8,14 +8,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-0.5 hover:shadow-[0_14px_30px_-10px_hsl(var(--teal)/0.45)]",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground hover:border-primary/40 hover:-translate-y-0.5",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        glow: "btn-shine text-primary-foreground font-semibold border-0 bg-[linear-gradient(120deg,hsl(var(--teal))_0%,hsl(var(--cyan))_100%)] shadow-[0_10px_30px_-10px_hsl(var(--teal)/0.55),inset_0_1px_0_hsl(0_0%_100%/0.25)] hover:shadow-[0_18px_44px_-14px_hsl(var(--teal)/0.65),inset_0_1px_0_hsl(0_0%_100%/0.3)] hover:-translate-y-0.5",
-        glass: "glass text-foreground hover:text-primary hover:border-primary/40 hover:-translate-y-0.5",
+        glow: "btn-shine text-primary-foreground font-semibold border-0 bg-[linear-gradient(120deg,hsl(var(--teal))_0%,hsl(var(--cyan))_100%)] shadow-[0_10px_30px_-10px_hsl(var(--teal)/0.55),inset_0_1px_0_hsl(0_0%_100%/0.25)] hover:shadow-[0_22px_50px_-14px_hsl(var(--teal)/0.7),inset_0_1px_0_hsl(0_0%_100%/0.3)] hover:-translate-y-0.5 hover:scale-[1.015]",
+        glass: "glass text-foreground hover:text-primary hover:border-primary/40 hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-16px_hsl(var(--teal)/0.35)]",
       },
       size: {
         default: "h-10 px-5 py-2",

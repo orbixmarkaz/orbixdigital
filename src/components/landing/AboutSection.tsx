@@ -15,24 +15,24 @@ export function AboutSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-32 relative overflow-hidden">
+    <section id="about" className="section-y relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
       <div className="absolute inset-x-0 top-0 divider-fade" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-20 items-center max-w-6xl mx-auto">
           <motion.div
             ref={ref}
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
           >
             <span className="eyebrow mb-6"><span className="eyebrow-dot" /> About Orbix</span>
-            <h2 className="text-4xl md:text-5xl font-display mb-6 tracking-tight leading-[1.05]">
-              About Orbix Digital Markaz —{" "}
-              <span className="gradient-text">Your Digital Growth Partner</span>
+            <h2 className="text-4xl md:text-5xl font-display mb-8 tracking-tight leading-[1.05]">
+              A digital growth partner built for{" "}
+              <span className="gradient-text">modern e-commerce brands</span>
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <p className="text-muted-foreground leading-[1.85] mb-6">
               Orbix Digital Markaz is a Pakistan-based digital marketing agency helping brands grow through Shopify store setup, website development, and performance-focused digital marketing.
             </p>
 

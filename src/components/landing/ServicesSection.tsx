@@ -19,7 +19,7 @@ export function ServicesSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="services" className="py-32 relative overflow-hidden">
+    <section id="services" className="section-y relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
       <div className="absolute inset-x-0 top-0 divider-fade" />
 
@@ -27,19 +27,19 @@ export function ServicesSection() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-20 max-w-3xl mx-auto"
+          transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
+          className="text-center mb-24 max-w-3xl mx-auto"
         >
           <span className="eyebrow mb-6"><span className="eyebrow-dot" /> What We Deliver</span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
-            Services Built for{" "}
-            <span className="gradient-text">Brand Growth</span>{" "}
+            Services engineered for{" "}
+            <span className="gradient-text">measurable brand growth</span>{" "}
             <span className="font-serif-accent text-foreground/70 block text-2xl md:text-3xl mt-3">by Orbix Digital</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            As a results-driven e-commerce digital marketing agency, we deliver premium Shopify theme
-            customization, high-converting e-commerce website design, and marketing readiness — everything
-            your brand needs to launch and scale.
+          <p className="text-lg text-muted-foreground leading-[1.75] tracking-[-0.005em]">
+            A results-driven e-commerce digital marketing agency delivering premium Shopify theme
+            customization, high-converting storefront design, and launch-ready performance systems —
+            everything a modern brand needs to scale with confidence.
           </p>
         </motion.div>
 
@@ -48,12 +48,12 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 25 }}
+              initial={{ opacity: 0, y: 28 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
+              transition={{ duration: 0.65, delay: index * 0.07, ease: [0.2, 0.7, 0.2, 1] }}
               className="group"
             >
-              <div className="glass-card ring-gradient rounded-2xl p-6 h-full hover:-translate-y-1.5 transition-transform duration-500 relative overflow-hidden">
+              <div className="glass-card ring-gradient card-lift rounded-2xl p-7 h-full relative overflow-hidden">
 
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
