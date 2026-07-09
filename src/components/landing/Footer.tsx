@@ -48,7 +48,7 @@ export function Footer() {
             <a href="#" className="flex items-center gap-3 mb-6">
               <img
                 src={orbixLogo}
-                alt="Orbix Digital Markaz — digital marketing agency in Pakistan"
+                alt="Orbix Digital Markaz — premium Shopify store setup and e-commerce digital marketing agency"
                 className="w-[180px] h-auto object-contain"
               />
             </a>

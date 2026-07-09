@@ -89,7 +89,7 @@ function BeforeAfterCard({ study, index }: { study: Study; index: number }) {
       <div className="relative aspect-[16/9] bg-secondary/40 overflow-hidden">
         <img
           src={study.before}
-          alt={`${study.title} — before`}
+          alt={`${study.title} — before premium Shopify store design by Orbix Digital Markaz`}
           loading="lazy"
           decoding="async"
           className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-500 ${
@@ -98,7 +98,7 @@ function BeforeAfterCard({ study, index }: { study: Study; index: number }) {
         />
         <img
           src={study.after}
-          alt={`${study.title} — after`}
+          alt={`${study.title} — after high-converting e-commerce website design by Orbix Digital Markaz`}
           loading="lazy"
           decoding="async"
           className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-500 ${

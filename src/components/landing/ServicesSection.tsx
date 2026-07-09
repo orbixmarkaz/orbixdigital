@@ -37,7 +37,9 @@ export function ServicesSection() {
             <span className="font-serif-accent text-foreground/70 block text-2xl md:text-3xl mt-3">by Orbix Digital</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            From Shopify setup to marketing readiness — everything your brand needs to launch and scale.
+            As a results-driven e-commerce digital marketing agency, we deliver premium Shopify theme
+            customization, high-converting e-commerce website design, and marketing readiness — everything
+            your brand needs to launch and scale.
           </p>
         </motion.div>
 

@@ -19,20 +19,26 @@ const Footer = lazy(() => import("@/components/landing/Footer").then(m => ({ def
 const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
-      <Navbar />
-      <HeroSection />
-      <Suspense fallback={<div className="min-h-[400px]" />}>
-        <BrandMarquee />
-        <ServicesSection />
-        <WhyChooseUs />
-        <PricingSection />
-        <CaseStudiesSection />
-        <ProcessSection />
-        <FounderSection />
-        <AboutSection />
-        <TestimonialsSection />
-        <FAQSection />
-        <CTASection />
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <HeroSection />
+        <Suspense fallback={<div className="min-h-[400px]" />}>
+          <BrandMarquee />
+          <ServicesSection />
+          <WhyChooseUs />
+          <PricingSection />
+          <CaseStudiesSection />
+          <ProcessSection />
+          <FounderSection />
+          <AboutSection />
+          <TestimonialsSection />
+          <FAQSection />
+          <CTASection />
+        </Suspense>
+      </main>
+      <Suspense fallback={null}>
         <Footer />
       </Suspense>
     </div>

@@ -47,7 +47,7 @@ export function FounderSection() {
 
                   <img
                     src={founderImage}
-                    alt="Abdul Basit — Founder, Orbix Digital Markaz"
+                    alt="Abdul Basit — Founder of Orbix Digital Markaz, Shopify web developer and e-commerce marketing expert"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover object-top"
