@@ -48,8 +48,9 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.28 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed"
           >
-            We set up premium Shopify stores using high-converting themes, handle product uploading,
-            and prepare your brand for growth with performance marketing readiness.
+            Work with a trusted Shopify web developer and e-commerce digital marketing agency.
+            We deliver high-converting e-commerce website design, premium Shopify theme customization,
+            and performance marketing readiness that helps you convert your Shopify store into a scalable brand.
           </motion.p>
 
           <motion.div

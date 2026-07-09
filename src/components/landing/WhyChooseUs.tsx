@@ -53,7 +53,7 @@ export function WhyChooseUs() {
             <span className="gradient-text">Orbix Digital Markaz</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            We deliver quality, reliability, and conversion-focused execution.
+            Hire a Shopify expert team that pairs premium design with conversion-focused execution — built to convert your Shopify store into a real growth engine.
           </p>
         </motion.div>
 
