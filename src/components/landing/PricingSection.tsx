@@ -79,7 +79,7 @@ export function PricingSection() {
             <span className="font-serif-accent text-foreground/70 block text-2xl md:text-3xl mt-3">by Orbix Digital</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Premium Shopify store setup packages designed for brands that want to launch right.
+            Premium Shopify theme customization packages built to convert your Shopify store — hire a Shopify expert team that launches brands the right way.
           </p>
         </motion.div>
 
