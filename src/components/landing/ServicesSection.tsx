@@ -30,15 +30,15 @@ export function ServicesSection() {
           transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
           className="text-center mb-24 max-w-3xl mx-auto"
         >
-          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> What We Deliver</span>
+          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Premium E-commerce Digital Marketing Agency</span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
-            Services engineered for{" "}
-            <span className="gradient-text">measurable brand growth</span>{" "}
+            Shopify Theme Customization Specialists{" "}
+            <span className="gradient-text">engineered for measurable growth</span>{" "}
             <span className="font-serif-accent text-foreground/70 block text-2xl md:text-3xl mt-3">by Orbix Digital</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-[1.75] tracking-[-0.005em]">
-            A results-driven e-commerce digital marketing agency delivering premium Shopify theme
-            customization, high-converting storefront design, and launch-ready performance systems —
+            A premium e-commerce digital marketing agency delivering expert Shopify theme
+            customization, high-converting store design, and launch-ready performance systems —
             everything a modern brand needs to scale with confidence.
           </p>
         </motion.div>
