@@ -15,43 +15,53 @@ export function HeroSection() {
         <div className="absolute inset-0 cyber-grid opacity-70" />
       </div>
 
-      <div className="container mx-auto px-6 pt-36 pb-24 relative z-10">
-        <div className="max-w-5xl mx-auto text-center">
+      <div className="container mx-auto px-6 pt-40 pb-28 relative z-10">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-end">
+          <div className="lg:col-span-8">
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, ease: [0.2, 0.7, 0.2, 1] }}
+              className="eyebrow mb-10"
+            >
+              <span className="eyebrow-dot animate-pulse" />
+              Expert Shopify Web Developer · Premium E-commerce Growth
+            </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.4, delay: 0.15, ease: [0.2, 0.7, 0.2, 1] }}
+              className="text-[44px] sm:text-6xl lg:text-[84px] font-display leading-[1.02] mb-10 tracking-tight text-foreground"
+            >
+              High-Converting{" "}
+              <span className="gradient-text">Shopify Store Design</span>
+              <br />
+              by an Expert Shopify Web Developer{" "}
+              <span className="font-serif-accent text-foreground/60 block sm:inline text-3xl sm:text-5xl lg:text-6xl mt-3 sm:mt-0">
+                — Orbix Digital Markaz
+              </span>
+            </motion.h1>
+          </div>
+
           <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="eyebrow mb-8"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.4, delay: 0.35, ease: [0.2, 0.7, 0.2, 1] }}
+            className="lg:col-span-4 lg:pl-8 lg:border-l lg:border-border/50"
           >
-            <span className="eyebrow-dot animate-pulse" />
-            Expert Shopify Web Developer · Premium E-commerce Growth
+            <p className="text-base md:text-lg text-muted-foreground leading-[1.85] font-light tracking-[0.005em]">
+              A premium e-commerce digital marketing agency and team of Shopify theme customization
+              specialists — building high-converting store design, performance-ready launches, and
+              scalable brand systems for modern founders.
+            </p>
           </motion.div>
+        </div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.1, ease: [0.2, 0.7, 0.2, 1] }}
-            className="text-[42px] sm:text-6xl lg:text-[80px] font-display leading-[1.02] mb-8 tracking-tight text-foreground"
-          >
-            High-Converting{" "}
-            <span className="gradient-text">Shopify Store Design</span>
-            <br />
-            by an Expert Shopify Web Developer{" "}
-            <span className="font-serif-accent text-foreground/70 block sm:inline text-3xl sm:text-5xl lg:text-6xl mt-2 sm:mt-0">
-              — Orbix Digital Markaz
-            </span>
-          </motion.h1>
+        <div className="max-w-6xl mx-auto mt-16 text-center lg:text-left">
 
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.28, ease: [0.2, 0.7, 0.2, 1] }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-14 leading-[1.75] tracking-[-0.005em]"
-          >
-            A premium e-commerce digital marketing agency and team of Shopify theme customization
-            specialists — building high-converting store design, performance-ready launches, and
-            scalable brand systems for modern founders.
-          </motion.p>
+
+
 
 
           <motion.div
