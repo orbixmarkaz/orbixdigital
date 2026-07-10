@@ -24,7 +24,7 @@ export function HeroSection() {
             className="eyebrow mb-8"
           >
             <span className="eyebrow-dot animate-pulse" />
-            Premium Shopify Setup & Digital Growth
+            Expert Shopify Web Developer · Premium E-commerce Growth
           </motion.div>
 
           <motion.h1
@@ -33,12 +33,12 @@ export function HeroSection() {
             transition={{ duration: 0.9, delay: 0.1, ease: [0.2, 0.7, 0.2, 1] }}
             className="text-[42px] sm:text-6xl lg:text-[80px] font-display leading-[1.02] mb-8 tracking-tight text-foreground"
           >
-            Launch Your{" "}
-            <span className="gradient-text">Shopify Store</span>
+            High-Converting{" "}
+            <span className="gradient-text">Shopify Store Design</span>
             <br />
-            & Scale Your Brand{" "}
+            by an Expert Shopify Web Developer{" "}
             <span className="font-serif-accent text-foreground/70 block sm:inline text-3xl sm:text-5xl lg:text-6xl mt-2 sm:mt-0">
-              with Orbix Digital Markaz
+              — Orbix Digital Markaz
             </span>
           </motion.h1>
 
@@ -48,10 +48,11 @@ export function HeroSection() {
             transition={{ duration: 0.9, delay: 0.28, ease: [0.2, 0.7, 0.2, 1] }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-14 leading-[1.75] tracking-[-0.005em]"
           >
-            A trusted Shopify web developer and e-commerce digital marketing agency crafting
-            high-converting stores, premium theme customization, and performance-ready launches —
-            engineered to convert your Shopify store into a scalable brand.
+            A premium e-commerce digital marketing agency and team of Shopify theme customization
+            specialists — building high-converting store design, performance-ready launches, and
+            scalable brand systems for modern founders.
           </motion.p>
+
 
           <motion.div
             initial={{ opacity: 0, y: 16 }}

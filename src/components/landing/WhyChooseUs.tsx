@@ -49,12 +49,13 @@ export function WhyChooseUs() {
         >
           <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Why Orbix</span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
-            The partner brands trust to{" "}
-            <span className="gradient-text">launch and scale with clarity</span>
+            High-Converting Store Design from a{" "}
+            <span className="gradient-text">premium e-commerce digital marketing agency</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-[1.75] tracking-[-0.005em]">
-            Hire a Shopify expert team that pairs premium design with conversion-focused execution —
-            built to turn your storefront into a real, measurable growth engine.
+            Hire an expert Shopify web developer and Shopify theme customization specialists —
+            pairing premium design with conversion-focused execution to turn your storefront into a
+            real, measurable growth engine.
           </p>
         </motion.div>
 

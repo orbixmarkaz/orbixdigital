@@ -24,7 +24,7 @@ const Index = () => {
       </header>
       <main>
         <HeroSection />
-        <Suspense fallback={<div className="min-h-[400px]" />}>
+        <Suspense fallback={<div aria-hidden="true" className="min-h-[60vh]" />}>
           <BrandMarquee />
           <ServicesSection />
           <WhyChooseUs />
