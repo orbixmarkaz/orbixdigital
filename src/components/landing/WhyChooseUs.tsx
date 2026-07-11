@@ -44,19 +44,24 @@ export function WhyChooseUs() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
-          className="text-center mb-24 max-w-3xl mx-auto"
+          transition={{ duration: 1.1, ease: [0.2, 0.7, 0.2, 1] }}
+          className="section-header-asym"
         >
-          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Why Orbix</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
-            High-Converting Store Design from a{" "}
-            <span className="gradient-text">premium e-commerce digital marketing agency</span>
-          </h2>
-          <p className="text-lg text-muted-foreground leading-[1.75] tracking-[-0.005em]">
-            Hire an expert Shopify web developer and Shopify theme customization specialists —
-            pairing premium design with conversion-focused execution to turn your storefront into a
-            real, measurable growth engine.
-          </p>
+          <div>
+            <span className="eyebrow mb-8"><span className="eyebrow-dot" /> Why Orbix</span>
+            <h2 className="text-[2.5rem] md:text-6xl lg:text-7xl font-display leading-[1.02] tracking-tight mt-6">
+              High-converting store design,{" "}
+              <span className="font-serif-accent gradient-text">quietly obsessive.</span>
+            </h2>
+          </div>
+          <div className="lg:pb-3">
+            <div className="hairline mb-6 max-w-[6rem]" />
+            <p className="text-base md:text-lg text-muted-foreground leading-[1.9] font-light">
+              Hire an expert Shopify web developer and Shopify theme customization specialists —
+              pairing premium design with conversion-focused execution to turn your storefront into a
+              real, measurable growth engine.
+            </p>
+          </div>
         </motion.div>
 
         <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">

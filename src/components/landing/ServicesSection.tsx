@@ -27,49 +27,52 @@ export function ServicesSection() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
-          className="text-center mb-24 max-w-3xl mx-auto"
+          transition={{ duration: 1.1, ease: [0.2, 0.7, 0.2, 1] }}
+          className="section-header-asym"
         >
-          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Premium E-commerce Digital Marketing Agency</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
-            Shopify Theme Customization Specialists{" "}
-            <span className="gradient-text">engineered for measurable growth</span>{" "}
-            <span className="font-serif-accent text-foreground/70 block text-2xl md:text-3xl mt-3">by Orbix Digital</span>
-          </h2>
-          <p className="text-lg text-muted-foreground leading-[1.75] tracking-[-0.005em]">
-            A premium e-commerce digital marketing agency delivering expert Shopify theme
-            customization, high-converting store design, and launch-ready performance systems —
-            everything a modern brand needs to scale with confidence.
-          </p>
+          <div>
+            <span className="eyebrow mb-8"><span className="eyebrow-dot" /> Premium E-commerce Agency</span>
+            <h2 className="text-[2.5rem] md:text-6xl lg:text-7xl font-display leading-[1.02] tracking-tight mt-6">
+              Shopify theme customization,{" "}
+              <span className="font-serif-accent gradient-text">engineered for growth.</span>
+            </h2>
+          </div>
+          <div className="lg:pb-3">
+            <div className="hairline mb-6 max-w-[6rem]" />
+            <p className="text-base md:text-lg text-muted-foreground leading-[1.9] font-light">
+              A premium e-commerce digital marketing agency delivering expert Shopify theme
+              customization, high-converting store design, and launch-ready performance systems —
+              everything a modern brand needs to scale with confidence.
+            </p>
+          </div>
         </motion.div>
 
 
-        <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
+        <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 28 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.65, delay: index * 0.07, ease: [0.2, 0.7, 0.2, 1] }}
-              className="group"
+              transition={{ duration: 1, delay: index * 0.08, ease: [0.2, 0.7, 0.2, 1] }}
+              className={`group relative ${index % 3 === 1 ? "lg:mt-14" : ""} ${index % 3 === 2 ? "lg:mt-6" : ""}`}
             >
-              <div className="glass-card ring-gradient card-lift rounded-2xl p-7 h-full relative overflow-hidden">
-
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                <div className="relative">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-cyan/10 border border-primary/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
-                    <service.icon className="w-6 h-6 text-primary" />
-
-                  </div>
-
-                  <h3 className="text-base font-semibold mb-2 text-foreground">{service.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">{service.description}</p>
-
-                  <div className="flex items-center text-primary text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Learn More
-                    <ArrowRight className="w-3.5 h-3.5 ml-1.5 group-hover:translate-x-1 transition-transform" />
-                  </div>
+              <div className="pt-8 border-t border-border/60 group-hover:border-primary/40 transition-colors duration-1000">
+                <div className="flex items-start justify-between gap-6 mb-6">
+                  <span className="rail-num text-3xl md:text-4xl">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <service.icon className="w-5 h-5 text-primary/70 mt-2 group-hover:text-primary transition-colors duration-700" strokeWidth={1.25} />
+                </div>
+                <h3 className="text-xl md:text-2xl font-display font-medium mb-4 text-foreground leading-snug">
+                  {service.title}
+                </h3>
+                <p className="text-[15px] text-muted-foreground leading-[1.85] font-light mb-6">
+                  {service.description}
+                </p>
+                <div className="inline-flex items-center text-primary text-xs uppercase tracking-[0.2em] track-x opacity-70 group-hover:opacity-100">
+                  Learn more
+                  <ArrowRight className="w-3 h-3 ml-2" strokeWidth={1.5} />
                 </div>
               </div>
             </motion.div>

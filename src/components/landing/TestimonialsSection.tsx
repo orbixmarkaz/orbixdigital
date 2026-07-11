@@ -37,17 +37,22 @@ export function TestimonialsSection() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
-          className="text-center mb-24 max-w-3xl mx-auto"
+          transition={{ duration: 1.1, ease: [0.2, 0.7, 0.2, 1] }}
+          className="section-header-asym"
         >
-          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Client Feedback</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
-            Trusted by founders who{" "}
-            <span className="gradient-text">expect the extraordinary</span>
-          </h2>
-          <p className="text-lg text-muted-foreground leading-[1.75] tracking-[-0.005em]">
-            Honest words from the brands we've helped launch, refine, and scale.
-          </p>
+          <div>
+            <span className="eyebrow mb-8"><span className="eyebrow-dot" /> Client Feedback</span>
+            <h2 className="text-[2.5rem] md:text-6xl lg:text-7xl font-display leading-[1.02] tracking-tight mt-6">
+              Trusted by founders who{" "}
+              <span className="font-serif-accent gradient-text">expect the extraordinary.</span>
+            </h2>
+          </div>
+          <div className="lg:pb-3">
+            <div className="hairline mb-6 max-w-[6rem]" />
+            <p className="text-base md:text-lg text-muted-foreground leading-[1.9] font-light">
+              Honest words from the brands we've helped launch, refine, and scale.
+            </p>
+          </div>
         </motion.div>
 
 

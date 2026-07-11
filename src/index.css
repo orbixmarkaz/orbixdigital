@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Instrument+Serif:ital@0;1&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -77,10 +77,11 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', 'Space Grotesk', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 300;
     font-feature-settings: "ss01", "cv11", "cv02";
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.75;
     letter-spacing: -0.005em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -92,12 +93,20 @@
   }
 
   h1, h2, h3, h4 {
-    letter-spacing: -0.024em;
-    line-height: 1.08;
+    font-family: 'Playfair Display', 'Instrument Serif', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.018em;
+    line-height: 1.06;
   }
 
   p {
-    line-height: 1.75;
+    line-height: 1.85;
+    font-weight: 300;
+  }
+
+  nav a, .nav-link {
+    font-weight: 300;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -113,16 +122,16 @@
   }
 
   .font-display {
-    font-family: 'Outfit', 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.028em;
+    font-family: 'Playfair Display', 'Instrument Serif', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
   }
 
   .font-serif-accent {
-    font-family: 'Instrument Serif', 'Outfit', serif;
+    font-family: 'Playfair Display', 'Instrument Serif', Georgia, serif;
     font-style: italic;
     font-weight: 400;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.005em;
   }
 
   /* Glass Effect */
@@ -294,7 +303,62 @@
     from { opacity: 0; transform: translateY(14px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-  .rise-in { animation: rise-in .8s cubic-bezier(.2,.7,.2,1) both; }
+  .rise-in { animation: rise-in 1.1s cubic-bezier(.2,.7,.2,1) both; }
+
+  /* Hairline separator — ultra-thin luxury divider */
+  .hairline {
+    height: 1px;
+    background: hsl(var(--border) / 0.6);
+  }
+  .hairline-v {
+    width: 1px;
+    background: hsl(var(--border) / 0.6);
+  }
+
+  /* Slim luxury frame — replaces heavy card chrome */
+  .luxe-frame {
+    border: 1px solid hsl(var(--border) / 0.7);
+    background: hsl(var(--card) / 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition: border-color 1s cubic-bezier(.2,.7,.2,1),
+                background-color 1s cubic-bezier(.2,.7,.2,1),
+                transform 1s cubic-bezier(.2,.7,.2,1);
+  }
+  .luxe-frame:hover {
+    border-color: hsl(var(--teal) / 0.35);
+    background: hsl(var(--card) / 0.75);
+  }
+
+  /* Liquid horizontal tracking on hover — for links & subtle CTAs */
+  .track-x {
+    transition: transform 1s cubic-bezier(.2,.7,.2,1), color .8s ease, opacity .8s ease;
+  }
+  .track-x:hover { transform: translateX(6px); }
+
+  /* Asymmetric section header — title left / eyebrow+copy right */
+  .section-header-asym {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: end;
+    margin-bottom: 5rem;
+  }
+  @media (min-width: 900px) {
+    .section-header-asym {
+      grid-template-columns: 1.35fr 1fr;
+      gap: 4rem;
+    }
+  }
+
+  /* Number rail marker for process/steps */
+  .rail-num {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: hsl(var(--teal) / 0.9);
+    letter-spacing: -0.02em;
+  }
 }
 
 /* Scrollbar */
