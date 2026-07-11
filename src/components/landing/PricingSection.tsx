@@ -70,17 +70,23 @@ export function PricingSection() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
-          className="text-center mb-24 max-w-3xl mx-auto"
+          transition={{ duration: 1.1, ease: [0.2, 0.7, 0.2, 1] }}
+          className="section-header-asym"
         >
-          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Transparent Pricing</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
-            Shopify setup <span className="gradient-text">packages</span>{" "}
-            <span className="font-serif-accent text-foreground/70 block text-2xl md:text-3xl mt-3">by Orbix Digital</span>
-          </h2>
-          <p className="text-lg text-muted-foreground leading-[1.75] tracking-[-0.005em]">
-            Premium Shopify theme customization tiers built to convert your Shopify store — hire a Shopify expert team that launches brands the right way.
-          </p>
+          <div>
+            <span className="eyebrow mb-8"><span className="eyebrow-dot" /> Transparent Pricing</span>
+            <h2 className="text-[2.5rem] md:text-6xl lg:text-7xl font-display leading-[1.02] tracking-tight mt-6">
+              Shopify setup{" "}
+              <span className="font-serif-accent gradient-text">packages.</span>
+            </h2>
+          </div>
+          <div className="lg:pb-3">
+            <div className="hairline mb-6 max-w-[6rem]" />
+            <p className="text-base md:text-lg text-muted-foreground leading-[1.9] font-light">
+              Premium Shopify theme customization tiers built to convert your Shopify store — hire a
+              Shopify expert team that launches brands the right way.
+            </p>
+          </div>
         </motion.div>
 
 
