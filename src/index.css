@@ -303,7 +303,62 @@
     from { opacity: 0; transform: translateY(14px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-  .rise-in { animation: rise-in .8s cubic-bezier(.2,.7,.2,1) both; }
+  .rise-in { animation: rise-in 1.1s cubic-bezier(.2,.7,.2,1) both; }
+
+  /* Hairline separator — ultra-thin luxury divider */
+  .hairline {
+    height: 1px;
+    background: hsl(var(--border) / 0.6);
+  }
+  .hairline-v {
+    width: 1px;
+    background: hsl(var(--border) / 0.6);
+  }
+
+  /* Slim luxury frame — replaces heavy card chrome */
+  .luxe-frame {
+    border: 1px solid hsl(var(--border) / 0.7);
+    background: hsl(var(--card) / 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition: border-color 1s cubic-bezier(.2,.7,.2,1),
+                background-color 1s cubic-bezier(.2,.7,.2,1),
+                transform 1s cubic-bezier(.2,.7,.2,1);
+  }
+  .luxe-frame:hover {
+    border-color: hsl(var(--teal) / 0.35);
+    background: hsl(var(--card) / 0.75);
+  }
+
+  /* Liquid horizontal tracking on hover — for links & subtle CTAs */
+  .track-x {
+    transition: transform 1s cubic-bezier(.2,.7,.2,1), color .8s ease, opacity .8s ease;
+  }
+  .track-x:hover { transform: translateX(6px); }
+
+  /* Asymmetric section header — title left / eyebrow+copy right */
+  .section-header-asym {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: end;
+    margin-bottom: 5rem;
+  }
+  @media (min-width: 900px) {
+    .section-header-asym {
+      grid-template-columns: 1.35fr 1fr;
+      gap: 4rem;
+    }
+  }
+
+  /* Number rail marker for process/steps */
+  .rail-num {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: hsl(var(--teal) / 0.9);
+    letter-spacing: -0.02em;
+  }
 }
 
 /* Scrollbar */
