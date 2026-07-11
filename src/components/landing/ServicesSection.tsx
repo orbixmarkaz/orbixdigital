@@ -27,20 +27,24 @@ export function ServicesSection() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
-          className="text-center mb-24 max-w-3xl mx-auto"
+          transition={{ duration: 1.1, ease: [0.2, 0.7, 0.2, 1] }}
+          className="section-header-asym"
         >
-          <span className="eyebrow mb-6"><span className="eyebrow-dot" /> Premium E-commerce Digital Marketing Agency</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-[1.05]">
-            Shopify Theme Customization Specialists{" "}
-            <span className="gradient-text">engineered for measurable growth</span>{" "}
-            <span className="font-serif-accent text-foreground/70 block text-2xl md:text-3xl mt-3">by Orbix Digital</span>
-          </h2>
-          <p className="text-lg text-muted-foreground leading-[1.75] tracking-[-0.005em]">
-            A premium e-commerce digital marketing agency delivering expert Shopify theme
-            customization, high-converting store design, and launch-ready performance systems —
-            everything a modern brand needs to scale with confidence.
-          </p>
+          <div>
+            <span className="eyebrow mb-8"><span className="eyebrow-dot" /> Premium E-commerce Agency</span>
+            <h2 className="text-[2.5rem] md:text-6xl lg:text-7xl font-display leading-[1.02] tracking-tight mt-6">
+              Shopify theme customization,{" "}
+              <span className="font-serif-accent gradient-text">engineered for growth.</span>
+            </h2>
+          </div>
+          <div className="lg:pb-3">
+            <div className="hairline mb-6 max-w-[6rem]" />
+            <p className="text-base md:text-lg text-muted-foreground leading-[1.9] font-light">
+              A premium e-commerce digital marketing agency delivering expert Shopify theme
+              customization, high-converting store design, and launch-ready performance systems —
+              everything a modern brand needs to scale with confidence.
+            </p>
+          </div>
         </motion.div>
 
 
