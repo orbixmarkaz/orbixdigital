@@ -77,10 +77,11 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', 'Space Grotesk', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 300;
     font-feature-settings: "ss01", "cv11", "cv02";
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.75;
     letter-spacing: -0.005em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -92,12 +93,20 @@
   }
 
   h1, h2, h3, h4 {
-    letter-spacing: -0.024em;
-    line-height: 1.08;
+    font-family: 'Playfair Display', 'Instrument Serif', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.018em;
+    line-height: 1.06;
   }
 
   p {
-    line-height: 1.75;
+    line-height: 1.85;
+    font-weight: 300;
+  }
+
+  nav a, .nav-link {
+    font-weight: 300;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -113,16 +122,16 @@
   }
 
   .font-display {
-    font-family: 'Outfit', 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.028em;
+    font-family: 'Playfair Display', 'Instrument Serif', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
   }
 
   .font-serif-accent {
-    font-family: 'Instrument Serif', 'Outfit', serif;
+    font-family: 'Playfair Display', 'Instrument Serif', Georgia, serif;
     font-style: italic;
     font-weight: 400;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.005em;
   }
 
   /* Glass Effect */
